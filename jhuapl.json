@@ -1,0 +1,1160 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Extract information from text documents in incident languages.",
+        "version": "1.0.0",
+        "title": "ELISA Information Extraction",
+        "contact": {
+            "email": "cash.costello@jhuapl.edu"
+        }
+    },
+    "host": "litesaber.outer.jhuapl.edu:18334",
+    "basePath": "/elisa_ie",
+    "tags": [
+        {
+            "name": "train",
+            "description": "API for training the elisa_ie system"
+        },
+        {
+            "name": "run",
+            "description": "API for runtime usage of the elisa_ie system"
+        },
+        {
+            "name": "eval",
+            "description": "API for measuring the performance of the elisa_ie system"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/status": {
+            "get": {
+                "tags": [
+                    "run"
+                ],
+                "summary": "status of the ie server",
+                "description": "status of the ie server. just an alias to supported_language GET method",
+                "operationId": "controllers.default_controller.status_get",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "An array of supported languages",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/SupportedLanguage"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "hasMore": "true",
+                        "tag": "run"
+                    },
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language": {
+            "get": {
+                "tags": [
+                    "run"
+                ],
+                "summary": "list of supported languages for elisa_ie",
+                "description": "Receives a list of supported languages. Each element in the list will include a language name, an identifier (three letters language code used to call the ie component) and a status, indicating whether the language is currently available.",
+                "operationId": "controllers.default_controller.supported_language_get",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "An array of supported languages",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/SupportedLanguage"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "hasMore": "true",
+                        "tag": "run"
+                    },
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language/model_status": {
+            "get": {
+                "tags": [
+                    "train"
+                ],
+                "summary": "Current model training status",
+                "description": "Current model training status",
+                "operationId": "controllers.default_controller.supported_language_model_status_get",
+                "parameters": [
+                    {
+                        "name": "model_id",
+                        "in": "query",
+                        "description": "model id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Model status are returned."
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}": {
+            "get": {
+                "tags": [
+                    "run"
+                ],
+                "summary": "Receives a single supported language item.",
+                "description": "Receives a single supported language item.",
+                "operationId": "controllers.default_controller.supported_language_identifier_get",
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "language code that matching identifier.",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "status of a single supported language",
+                        "schema": {
+                            "$ref": "#/definitions/SupportedLanguage"
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "hasMore": "true",
+                        "tag": "run"
+                    },
+                    {
+                        "tag": "train"
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "train"
+                ],
+                "summary": "create a new incident language",
+                "description": "Create a new incident language. A new entry will appear in the supported language list, and will be marked 'pending' until training finishes.",
+                "operationId": "controllers.default_controller.supported_language_identifier_post",
+                "consumes": [
+                    "text/plain"
+                ],
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "three character language code.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "language_full_name",
+                        "in": "query",
+                        "description": "full name of the new added language.",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "202": {
+                        "description": "A new incident language has been scheduled for creation",
+                        "schema": {
+                            "$ref": "#/definitions/SupportedLanguage"
+                        }
+                    },
+                    "default": {
+                        "description": "Error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/ie": {
+            "post": {
+                "tags": [
+                    "run"
+                ],
+                "summary": "ie result in json format for input text document",
+                "description": "Receives ie result in json format for input text document.",
+                "operationId": "controllers.default_controller.supported_language_identifier_ie_post",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "language code identifier for the language used for ie. (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "text",
+                        "in": "formData",
+                        "description": "text document used as input to ie system.",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "JMIST_elisa_xml",
+                        "in": "formData",
+                        "description": "Upload JMIST ELISA parallel xml file.",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "model",
+                        "in": "query",
+                        "description": "Receives ie result in json format for the input text document. One ie model is provided:  (1) litesaber-svml: SVM lattice approach",
+                        "required": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "default": "litesaber-svml",
+                            "enum": [
+                                "litesaber-svml"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "model_id",
+                        "in": "query",
+                        "description": "(optional) If a model id is entered, name tagger will return results using the specific model. Use train function below to train a model.",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "output_format",
+                        "in": "query",
+                        "description": "Choose result name tagging result format: (1)KnowledgeGraph: JSON knowledge graph format. (2) EvalTab: NIST LORELEI evaluation format.",
+                        "required": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "default": "KnowledgeGraph",
+                            "enum": [
+                                "KnowledgeGraph",
+                                "EvalTab"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON format for entities, events and relations in knowledge graph.",
+                        "schema": {
+                            "$ref": "#/definitions/KnowledgeGraph"
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "run"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/localize": {
+            "get": {
+                "tags": [
+                    "run"
+                ],
+                "summary": "name localization",
+                "description": "name localization",
+                "operationId": "controllers.default_controller.supported_language_identifier_localize_get",
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "language code identifier for the language used for ie. (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "name to localize",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "name latitude and longitude in JSON format"
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "run"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/model_id": {
+            "get": {
+                "tags": [
+                    "run"
+                ],
+                "summary": "Get user created model ids.",
+                "description": "Get user created model ids.",
+                "operationId": "controllers.default_controller.supported_language_identifier_model_id_get",
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "Three character language code identifier (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Model ids are returned."
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "run"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/name_translation": {
+            "get": {
+                "tags": [
+                    "run"
+                ],
+                "summary": "name translation",
+                "description": "name translation",
+                "operationId": "controllers.default_controller.supported_language_identifier_name_translation_get",
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "language code identifier for the language used for ie. (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "name to translate",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "name translation in JSON format"
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "run"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/name_transliteration": {
+            "get": {
+                "tags": [
+                    "run"
+                ],
+                "summary": "name transliteration",
+                "description": "name transliteration",
+                "operationId": "controllers.default_controller.supported_language_identifier_name_transliteration_get",
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "language code identifier for the language used for ie. (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "name to transliterate",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "model_id",
+                        "in": "query",
+                        "description": "(optional) If a model id is entered, name transliteration will return results using the specific model. Use train function below to train a model.",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "name transliteration in JSON format"
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "run"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/tasks": {
+            "get": {
+                "tags": [
+                    "train"
+                ],
+                "summary": "a list of tasks required to complete training. tasks marked 'interactive' require human-in-the-loop",
+                "description": "if a language-pair is in the process of training, then some tasks will be either pending or running or interactive. otherwise, all tasks will have a 'complete' status",
+                "operationId": "controllers.default_controller.supported_language_identifier_tasks_get",
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "three character language identifier",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "a list of task identifiers and statuses",
+                        "schema": {
+                            "$ref": "#/definitions/inline_response_200"
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/inline_response_default"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/tasks/{task}": {
+            "get": {
+                "tags": [
+                    "train"
+                ],
+                "summary": "a single task from the task list",
+                "operationId": "controllers.default_controller.supported_language_identifier_tasks_task_get",
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "three character language identifier",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "task",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "a single task",
+                        "schema": {
+                            "$ref": "#/definitions/inline_response_200_1"
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/inline_response_default"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/train_crf": {
+            "post": {
+                "tags": [
+                    "train"
+                ],
+                "summary": "Train a new CRFs name tagger model for an IL",
+                "description": "Use LDC \"ltf\" and \"laf\" format annotation data as input, train a CRFs mode using general features.",
+                "operationId": "controllers.default_controller.supported_language_identifier_train_crf_post",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "Three character language code identifier (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "creator",
+                        "in": "query",
+                        "description": "Creator's name.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "zipped_training_docs",
+                        "in": "formData",
+                        "description": "Please use \"zip\" to compress \"ltf\" and \"laf\" documents.",
+                        "required": true,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Model is successfully trained."
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/train_dnn": {
+            "post": {
+                "tags": [
+                    "train"
+                ],
+                "summary": "Train a new DNN name tagger model for an IL",
+                "description": "Use CoNLL \"BIO\" format annotation data as input, train a DNN mode.",
+                "operationId": "controllers.default_controller.supported_language_identifier_train_dnn_post",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "Three character language code identifier (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "creator",
+                        "in": "query",
+                        "description": "Creator's name.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "train_bio",
+                        "in": "formData",
+                        "description": "CoNLL \"BIO\" format annotation data",
+                        "required": true,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Model is successfully trained."
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/train_expectation": {
+            "post": {
+                "tags": [
+                    "train"
+                ],
+                "summary": "Train a Expectation-driven name tagger model for an IL",
+                "description": "Use IL monolingual documents and elisa parallel training data as input, train a Expectation-driven name tagger mode. (training takes several minutes due to running English IE and GIZA word alignment on elisa data)",
+                "operationId": "controllers.default_controller.supported_language_identifier_train_expectation_post",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "Three character language code identifier (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "creator",
+                        "in": "query",
+                        "description": "Creator's name.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "zipped_monolingual_docs",
+                        "in": "formData",
+                        "description": "Please use \"zip\" to compress monolingual documents. (suggest to use 500 or above documents for )",
+                        "required": false,
+                        "type": "file"
+                    },
+                    {
+                        "name": "zipped_elisa_training_data",
+                        "in": "formData",
+                        "description": "Please use \"zip\" to compress elisa parallel training data.",
+                        "required": false,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Model is successfully trained."
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/train_name_transliteration": {
+            "post": {
+                "tags": [
+                    "train"
+                ],
+                "summary": "Train a name translation model for an IL",
+                "description": "Train a name translation model for an IL",
+                "operationId": "controllers.default_controller.supported_language_identifier_train_name_transliteration_post",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "Three character language code identifier (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "creator",
+                        "in": "query",
+                        "description": "Creator's name.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "training_doc",
+                        "in": "formData",
+                        "description": "Upload IL name transliteration training document",
+                        "required": true,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Model is successfully trained."
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "train"
+                    }
+                ]
+            }
+        },
+        "/supported_language/{identifier}/typing": {
+            "post": {
+                "tags": [
+                    "run"
+                ],
+                "summary": "Linking based typing system",
+                "description": "Receives name type in JSON format",
+                "operationId": "controllers.default_controller.supported_language_identifier_typing_post",
+                "consumes": [
+                    "text/plain"
+                ],
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "language code identifier for the language used for ie. (e.g. \"hau\", \"tur\", \"yor\" and etc.)",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "text",
+                        "description": "IL name",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "name type in JSON format"
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+                "x-tags": [
+                    {
+                        "tag": "run"
+                    }
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "KnowledgeGraph": {
+            "type": "object",
+            "properties": {
+                "attribute": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Attribute"
+                    }
+                },
+                "entity_mention": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EntityMention"
+                    }
+                },
+                "entity": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Entity"
+                    }
+                },
+                "event_mention": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EventMention"
+                    }
+                },
+                "event": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Event"
+                    }
+                },
+                "relation": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Relation"
+                    }
+                }
+            }
+        },
+        "Attribute": {
+            "type": "object",
+            "required": [
+                "attribute_head",
+                "attribute_id",
+                "attribute_type",
+                "attribute_value",
+                "docid:offset"
+            ],
+            "properties": {
+                "attribute_id": {
+                    "type": "string"
+                },
+                "attribute_type": {
+                    "type": "string"
+                },
+                "docid:offset": {
+                    "type": "string"
+                },
+                "attribute_head": {
+                    "type": "string"
+                },
+                "attribute_value": {
+                    "type": "string"
+                }
+            }
+        },
+        "EntityMention": {
+            "type": "object",
+            "required": [
+                "docid:offsets",
+                "mention_head",
+                "mention_id",
+                "mention_type",
+                "sentenceid:tokenindexes",
+                "translations",
+                "transliterations"
+            ],
+            "properties": {
+                "mention_id": {
+                    "type": "string"
+                },
+                "docid:offsets": {
+                    "type": "string"
+                },
+                "sentenceid:tokenindexes": {
+                    "type": "string"
+                },
+                "mention_head": {
+                    "type": "string"
+                },
+                "mention_type": {
+                    "type": "string"
+                },
+                "translations": {
+                    "type": "array",
+                    "description": "a list of English translations of the entity mention",
+                    "items": {
+                        "type": "array",
+                        "description": "array of size 2, first element is the translation and the second is confidence score",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "transliterations": {
+                    "type": "array",
+                    "description": "a list of English transliterations of the entity mention",
+                    "items": {
+                        "type": "array",
+                        "description": "array of size 2, first element is the transliteration and the second is confidence score",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "Entity": {
+            "type": "object",
+            "required": [
+                "entity_id",
+                "entity_type"
+            ],
+            "properties": {
+                "entity_id": {
+                    "type": "string"
+                },
+                "entity_type": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "a path of subtypes"
+                },
+                "attributes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Attribute"
+                    }
+                }
+            }
+        },
+        "EventMention": {
+            "type": "object",
+            "required": [
+                "event_extent",
+                "event_offsets",
+                "mention_id",
+                "trigger",
+                "trigger_offsets"
+            ],
+            "properties": {
+                "mention_id": {
+                    "type": "string"
+                },
+                "event_offsets": {
+                    "type": "string"
+                },
+                "event_extent": {
+                    "type": "string"
+                },
+                "trigger_offsets": {
+                    "type": "string"
+                },
+                "trigger": {
+                    "type": "string"
+                },
+                "arguments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Attribute"
+                    }
+                }
+            }
+        },
+        "Event": {
+            "type": "object",
+            "required": [
+                "event_id",
+                "event_type"
+            ],
+            "properties": {
+                "event_id": {
+                    "type": "string"
+                },
+                "event_type": {
+                    "type": "string"
+                },
+                "arguments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Attribute"
+                    }
+                }
+            }
+        },
+        "Relation": {
+            "type": "object",
+            "required": [
+                "relation_id",
+                "relation_type"
+            ],
+            "properties": {
+                "relation_id": {
+                    "type": "string"
+                },
+                "relation_type": {
+                    "type": "string"
+                },
+                "arguments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Attribute"
+                    }
+                }
+            }
+        },
+        "SupportedLanguage": {
+            "type": "object",
+            "required": [
+                "identifier",
+                "language",
+                "status"
+            ],
+            "properties": {
+                "identifier": {
+                    "type": "string",
+                    "description": "three letter language code, e.g. eng, chn, hau and etc."
+                },
+                "language": {
+                    "type": "string",
+                    "description": "language of input text document"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "if the value is set to 'online', the supported language can be used. if support languag is unavailable, and may require human intervention to bring it back online. if 'pending', the support languag is being created, and will be available eventually, either without human intervention, or after some human-in-the-loop interaction",
+                    "enum": [
+                        "online",
+                        "offline",
+                        "pending"
+                    ]
+                }
+            }
+        },
+        "Task": {
+            "type": "object",
+            "required": [
+                "identifier",
+                "status"
+            ],
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "complete",
+                        "running",
+                        "interactive",
+                        "pending",
+                        "failed"
+                    ]
+                },
+                "identifier": {
+                    "type": "string",
+                    "description": "the identifier for the task"
+                },
+                "dependencies": {
+                    "type": "array",
+                    "description": "list of tasks which must complete before this task begins",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "url": {
+                    "type": "string",
+                    "description": "for interactive tasks, the URL the human-in-the-loop must visit to complete the task"
+                },
+                "start-time": {
+                    "type": "string",
+                    "description": "UTC time stamp representing when the task began"
+                },
+                "finish-time": {
+                    "type": "string",
+                    "description": "UTC time stamp representing when the task ended"
+                }
+            }
+        },
+        "Error": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        },
+        "inline_response_200": {
+            "properties": {
+                "tasks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Task"
+                    }
+                }
+            }
+        },
+        "inline_response_default": {
+            "properties": {
+                "error": {
+                    "$ref": "#/definitions/Error"
+                }
+            }
+        },
+        "inline_response_200_1": {
+            "properties": {
+                "task": {
+                    "$ref": "#/definitions/Task"
+                }
+            }
+        }
+    }
+}
