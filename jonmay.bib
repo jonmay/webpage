@@ -1,3 +1,30 @@
+
+@InProceedings{huang-ji-may:2019:N19-1,
+  author    = {Huang, Lifu  and  Ji, Heng  and  May, Jonathan},
+  title     = {Cross-lingual Multi-Level Adversarial Transfer to Enhance Low-Resource Name Tagging},
+  booktitle = {Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+  month     = {June},
+  year      = {2019},
+  address   = {Minneapolis, Minnesota},
+  publisher = {Association for Computational Linguistics},
+  pages     = {3823--3833},
+  abstract  = {We focus on improving name tagging for low-resource languages using annotations from related languages. Previous studies either directly project annotations from a source language to a target language using cross-lingual representations or use a shared encoder in a multitask network to transfer knowledge. These approaches inevitably introduce noise to the target language annotation due to mismatched source-target sentence structures. To effectively transfer the resources, we develop a new neural architecture that leverages multi-level adversarial transfer: (1) word-level adversarial training, which projects source language words into the same semantic space as those of the target language without using any parallel corpora or bilingual gazetteers, and (2) sentence-level adversarial training, which yields language-agnostic sequential features. Our neural architecture outperforms previous approaches on CoNLL data sets. Moreover, on 10 low-resource languages, our approach achieves up to 16\% absolute F-score gain over all high-performing baselines on cross-lingual transfer without using any target-language resources.},
+  url       = {http://www.aclweb.org/anthology/N19-1383}
+}
+
+@InProceedings{cardenas-EtAl:2019:N19-1,
+  author    = {Cardenas, Ronald  and  Lin, Ying  and  Ji, Heng  and  May, Jonathan},
+  title     = {A Grounded Unsupervised Universal Part-of-Speech Tagger for Low-Resource Languages},
+  booktitle = {Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+  month     = {June},
+  year      = {2019},
+  address   = {Minneapolis, Minnesota},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2428--2439},
+  abstract  = {Unsupervised part of speech (POS) tagging is often framed as a clustering problem, but practical taggers need to ground their clusters as well. Grounding generally requires reference labeled data, a luxury a low-resource language might not have. In this work, we describe an approach for low-resource unsupervised POS tagging that yields fully grounded output and requires no labeled training data. We find the classic method of Brown et al. (1992) clusters well in our use case and employ a decipherment-based approach to grounding. This approach presumes a sequence of cluster IDs is a `ciphertext' and seeks a POS tag-to-cluster ID mapping that will reveal the POS sequence. We show intrinsically that, despite the difficulty of the task, we obtain reasonable performance across a variety of languages. We also show extrinsically that incorporating our POS tagger into a name tagger leads to state-of-the-art tagging performance in Sinhalese and Kinyarwanda, two languages with nearly no labeled POS data available. We further demonstrate our tagger's utility by incorporating it into a true `zero-resource' variant of the MALOPA (Ammar et al., 2016) dependency parser model that removes the current reliance on multilingual resources and gold POS tags for new languages. Experiments show that including our tagger makes up much of the accuracy lost when gold POS tags are unavailable.},
+  url       = {http://www.aclweb.org/anthology/N19-1252}
+}
+
 @InProceedings{hermjakob-EtAl:2018:Demos,
   author    = {Hermjakob, Ulf  and  May, Jonathan  and  Pust, Michael  and  Knight, Kevin},
   title     = {Translating a Language You Don't Know In the Chinese Room},
