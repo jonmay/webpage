@@ -1,3 +1,19 @@
+@inproceedings{yin-etal-2021-summary,
+    title = "Summary-Oriented Question Generation for Informational Queries",
+    author = "Yin, Xusen  and
+      Zhou, Li  and
+      Small, Kevin  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 1st Workshop on Document-grounded Dialogue and Conversational Question Answering (DialDoc 2021)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.dialdoc-1.11",
+    pages = "81--97",
+    abstract = "Users frequently ask simple factoid questions for question answering (QA) systems, attenuating the impact of myriad recent works that support more complex questions. Prompting users with automatically generated suggested questions (SQs) can improve user understanding of QA system capabilities and thus facilitate more effective use. We aim to produce self-explanatory questions that focus on main document topics and are answerable with variable length passages as appropriate. We satisfy these requirements by using a BERT-based Pointer-Generator Network trained on the Natural Questions (NQ) dataset. Our model shows SOTA performance of SQ generation on the NQ dataset (20.1 BLEU-4). We further apply our model on out-of-domain news articles, evaluating with a QA system due to the lack of gold questions and demonstrate that our model produces better SQs for news articles {--} with further confirmation via a human evaluation.",
+}
+
 
 @misc{gheini2021strengths,
       title={On the Strengths of Cross-Attention in Pretrained Transformers for Machine Translation}, 
@@ -25,40 +41,50 @@
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-
 @inproceedings{gowda-etal-2021-many,
-      title={Many-to-English Machine Translation Tools, Data, and Pretrained Models,
-      author={Thamme Gowda and Zhao Zhang and Chris Mattmann and Jonathan May,
-    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics: System Demonstrations",
-    month = jul,
+    title = "Many-to-{E}nglish Machine Translation Tools, Data, and Pretrained Models",
+    author = "Gowda, Thamme  and
+      Zhang, Zhao  and
+      Mattmann, Chris  and
+      May, Jonathan",
+    booktitle = "Proceedings of the Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing: System Demonstrations",
+    month = aug,
     year = "2021",
     address = "Online",
     publisher = "Association for Computational Linguistics",
-    note = "To Appear",
+    url = "https://aclanthology.org/2021.acl-demo.37",
+    pages = "306--316",
+    abstract = "While there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages. Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages. In this work, we present useful tools for machine translation research: MTData, NLCodec and RTG. We demonstrate their usefulness by creating a multilingual neural machine translation model capable of translating from 500 source languages to English. We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.",
 }
 
 
 @inproceedings{hambardzumyan-etal-2021-warp,
-      title={{WARP}: Word-level Adversarial ReProgramming,
-      author={Karen Hambardzumyan and Hrant Khachatrian and Jonathan May,
-    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics",
-    month = jul,
+    title = "{WARP}: {W}ord-level {A}dversarial {R}e{P}rogramming",
+    author = "Hambardzumyan, Karen  and
+      Khachatrian, Hrant  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
     year = "2021",
     address = "Online",
     publisher = "Association for Computational Linguistics",
-    note = "To Appear",
+    url = "https://aclanthology.org/2021.acl-long.381",
+    pages = "4921--4933",
+    abstract = "Transfer learning from pretrained language models recently became the dominant approach for solving many NLP tasks. A common approach to transfer learning for multiple tasks that maximize parameter sharing trains one or more task-specific layers on top of the language model. In this paper, we present an alternative approach based on adversarial reprogramming, which extends earlier work on automatic prompt generation. Adversarial reprogramming attempts to learn task-specific word embeddings that, when concatenated to the input text, instruct the language model to solve the specified task. Using up to 25K trainable parameters per task, this approach outperforms all existing methods with up to 25M trainable parameters on the public leaderboard of the GLUE benchmark. Our method, initialized with task-specific human-readable prompts, also works in a few-shot setting, outperforming GPT-3 on two SuperGLUE tasks with just 32 training samples.",
 }
 
-
-@inproceedings{aldarrab-may-2021-can,
-      title={Can Sequence-to-Sequence Models Crack Substitution Ciphers?}, 
-      author={Nada Aldarrab and Jonathan May},
-    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics",
-    month = jul,
+@inproceedings{aldarrab-may-2021-sequence,
+    title = "Can Sequence-to-Sequence Models Crack Substitution Ciphers?",
+    author = "Aldarrab, Nada  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
     year = "2021",
     address = "Online",
     publisher = "Association for Computational Linguistics",
-    note = "To Appear",
+    url = "https://aclanthology.org/2021.acl-long.561",
+    pages = "7226--7235",
+    abstract = "Decipherment of historical ciphers is a challenging problem. The language of the target plaintext might be unknown, and ciphertext can have a lot of noise. State-of-the-art decipherment methods use beam search and a neural language model to score candidate plaintext hypotheses for a given cipher, assuming the plaintext language is known. We propose an end-to-end multilingual model for solving simple substitution ciphers. We test our model on synthetic and real historical ciphers and show that our proposed method can decipher text without explicit language identification while still being robust to noise.",
 }
 
 @inproceedings{mhamdi-etal-2021-x,
@@ -168,6 +194,18 @@
     publisher = "International Committee for Computational Linguistics",
     url = "https://www.aclweb.org/anthology/2020.semeval-1.0",
 }
+
+
+
+@InBook{mythodologies-2019,
+  author =    {Joseph A. Dane and Jonathan May},
+  title =        {Begging The Question: Critical Reasoning in Chaucer Studies, Book History, and Humanistic Inquiry},
+  chapter =      {III.3: Evidence and Artificial Intelligence},
+  publisher =    {Marymount Institute Press},
+  year =         2019,
+  number =    {II},
+  series =    {Mythodologies},
+  pages =     {295--208}}
 
 @proceedings{nlp-covid19-2020-nlp,
     title = "Proceedings of the 1st Workshop on {NLP} for {COVID-19} at {ACL} 2020",
