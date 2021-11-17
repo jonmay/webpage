@@ -1,27 +1,80 @@
+@proceedings{10.1145/3465413,
+title = {Checkmate '21: Proceedings of the 2021 Research on Offensive and Defensive Techniques in the Context of Man At The End (MATE) Attacks},
+year = {2021},
+isbn = {9781450385527},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to the 2021 workshop on research on offensive and defensive techniques in the context of Man At The End (MATE) attacks - CheckMate '21.CheckMATE is the continuation, extension (and renaming) of a long history of workshops throughout the years. This year's symposium continues its tradition of being the premier forum for research in the context of man-at-the-end attacks, with a focus on models and techniques to defend software from tampering, reverse engineering, and piracy as well as to the development of new attack strategies that highlight the need of more complete defenses. CheckMate gives researchers and practitioners a unique opportunity to share their perspectives with others interested in this unique area of security.We also encourage attendees to attend the tutorial on "Analyzing Virtualization-based Obfuscation Schemes" by Tim Bazytko.},
+location = {Virtual Event, Republic of Korea}
+}
 
 
-@InProceedings{spangher-etal-2021-multitask,
-  author =       {Alexander Spangher and Jonathan May and Sz-Rung Shiang and Lingjia Deng},
-  title =        {Multitask Semi-Supervised Learning for Class-Imbalanced Discourse Classification},
-  booktitle = {Proc. EMNLP},
-  year =      2021,
-  note =      {To Appear}}
+@article{DBLP:journals/corr/abs-2106-01540,
+  author    = {Xuezhe Ma and
+               Xiang Kong and
+               Sinong Wang and
+               Chunting Zhou and
+               Jonathan May and
+               Hao Ma and
+               Luke Zettlemoyer},
+  title     = {Luna: Linear Unified Nested Attention},
+  journal   = {CoRR},
+  volume    = {abs/2106.01540},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2106.01540},
+  eprinttype = {arXiv},
+  eprint    = {2106.01540},
+  timestamp = {Thu, 10 Jun 2021 16:34:18 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2106-01540.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
 
+@inproceedings{spangher-etal-2021-multitask,
+    title = "Multitask Semi-Supervised Learning for Class-Imbalanced Discourse Classification",
+    author = "Spangher, Alexander  and
+      May, Jonathan  and
+      Shiang, Sz-Rung  and
+      Deng, Lingjia",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.40",
+    pages = "498--517",
+    abstract = "As labeling schemas evolve over time, small differences can render datasets following older schemas unusable. This prevents researchers from building on top of previous annotation work and results in the existence, in discourse learning in particular, of many small class-imbalanced datasets. In this work, we show that a multitask learning approach can combine discourse datasets from similar and diverse domains to improve discourse classification. We show an improvement of 4.9{\%} Micro F1-score over current state-of-the-art benchmarks on the \textit{NewsDiscourse} dataset, one of the largest discourse datasets recently published, due in part to label correlations across tasks, which improve performance for underrepresented classes. We also offer an extensive review of additional techniques proposed to address resource-poor problems in NLP, and show that none of these approaches can improve classification accuracy in our setting.",
+}
 
-@InProceedings{zhang-etal-2021-salience,
-  author =       {Xiyang Zhang and Muhao Chen and Jonathan May},
-  title =        {Salience-Aware Event Chain Modeling for Narrative Understanding},
-  booktitle = {Proc. EMNLP},
-  year =      2021,
-  note =      {To Appear}}
+@inproceedings{zhang-etal-2021-salience,
+    title = "Salience-Aware Event Chain Modeling for Narrative Understanding",
+    author = "Zhang, Xiyang  and
+      Chen, Muhao  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.107",
+    pages = "1418--1428",
+    abstract = "Storytelling, whether via fables, news reports, documentaries, or memoirs, can be thought of as the communication of interesting and related events that, taken together, form a concrete process. It is desirable to extract the event chains that represent such processes. However, this extraction remains a challenging problem. We posit that this is due to the nature of the texts from which chains are discovered. Natural language text interleaves a narrative of concrete, salient events with background information, contextualization, opinion, and other elements that are important for a variety of necessary discourse and pragmatics acts but are not part of the principal chain of events being communicated. We introduce methods for extracting this principal chain from natural language text, by filtering away non-salient events and supportive sentences. We demonstrate the effectiveness of our methods at isolating critical event chains by comparing their effect on downstream tasks. We show that by pre-training large language models on our extracted chains, we obtain improvements in two tasks that benefit from a clear understanding of event chains: narrative prediction and event-based temporal question answering. The demonstrated improvements and ablative studies confirm that our extraction method isolates critical event chains.",
+}
 
+@inproceedings{gheini-etal-2021-cross,
+    title = "Cross-Attention is All You Need: {A}dapting Pretrained {T}ransformers for Machine Translation",
+    author = "Gheini, Mozhdeh  and
+      Ren, Xiang  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.132",
+    pages = "1754--1765",
+    abstract = "We study the power of cross-attention in the Transformer architecture within the context of transfer learning for machine translation, and extend the findings of studies into cross-attention when training from scratch. We conduct a series of experiments through fine-tuning a translation model on data where either the source or target language has changed. These experiments reveal that fine-tuning only the cross-attention parameters is nearly as effective as fine-tuning all parameters (i.e., the entire translation model). We provide insights into why this is the case and observe that limiting fine-tuning in this manner yields cross-lingually aligned embeddings. The implications of this finding for researchers and practitioners include a mitigation of catastrophic forgetting, the potential for zero-shot translation, and the ability to extend machine translation models to several new language pairs with reduced parameter storage overhead.",
+}
 
-@InProceedings{gheini-etal-2021-cross,
-  author =       {Mozhdeh Gheini and Xiang Ren and Jonathan May},
-  title =        {Cross-Attention is All You Need: Adapting Pretrained Transformers for Machine Translation},
-  booktitle = {Proc. EMNLP},
-  year =      2021,
-  note =      {To Appear}}
 
 @inproceedings{yin-etal-2021-summary,
     title = "Summary-Oriented Question Generation for Informational Queries",
@@ -163,44 +216,6 @@
     url = "https://www.aclweb.org/anthology/2021.naacl-main.90",
     pages = "1138--1157",
     abstract = "While traditional corpus-level evaluation metrics for machine translation (MT) correlate well with fluency, they struggle to reflect adequacy. Model-based MT metrics trained on segment-level human judgments have emerged as an attractive replacement due to strong correlation results. These models, however, require potentially expensive re-training for new domains and languages. Furthermore, their decisions are inherently non-transparent and appear to reflect unwelcome biases. We explore the simple type-based classifier metric, MacroF1, and study its applicability to MT evaluation. We find that MacroF1 is competitive on direct assessment, and outperforms others in indicating downstream cross-lingual information retrieval task performance. Further, we show that MacroF1 can be used to effectively compare supervised and unsupervised neural machine translation, and reveal significant qualitative differences in the methods{'} outputs.",
-}
-
-@misc{yin2020question,
-      title={Question Generation for Supporting Informational Query Intents}, 
-      author={Xusen Yin and Jonathan May and Li Zhou and Kevin Small},
-      year={2020},
-      eprint={2010.09692},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-
-
-@misc{aldarrab2020sequencetosequence,
-      title={Can Sequence-to-Sequence Models Crack Substitution Ciphers?}, 
-      author={Nada Aldarrab and Jonathan May},
-      year={2020},
-      eprint={2012.15229},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-
-
-@misc{hambardzumyan2021warp,
-      title={WARP: Word-level Adversarial ReProgramming}, 
-      author={Karen Hambardzumyan and Hrant Khachatrian and Jonathan May},
-      year={2021},
-      eprint={2101.00121},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-
-@misc{spangher2021multitask,
-      title={Multitask Learning for Class-Imbalanced Discourse Classification}, 
-      author={Alexander Spangher and Jonathan May and Sz-rung Shiang and Lingjia Deng},
-      year={2021},
-      eprint={2101.00389},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
 }
 
 
@@ -470,7 +485,7 @@ News Articles},
     abstract = "The identification of complex semantic structures such as events and entity relations, already a challenging Information Extraction task, is doubly difficult from sources written in under-resourced and under-annotated languages. We investigate the suitability of cross-lingual structure transfer techniques for these tasks. We exploit relation- and event-relevant language-universal features, leveraging both symbolic (including part-of-speech and dependency path) and distributional (including type representation and contextualized representation) information. By representing all entity mentions, event triggers, and contexts into this complex and structured multilingual common space, using graph convolutional networks, we can train a relation or event extractor from source language annotations and apply it to the target language. Extensive experiments on cross-lingual relation and event transfer among English, Chinese, and Arabic demonstrate that our approach achieves performance comparable to state-of-the-art supervised models trained on up to 3,000 manually annotated mentions: up to 62.6{\%} F-score for Relation Extraction, and 63.1{\%} F-score for Event Argument Role Labeling. The event argument role labeling model transferred from English to Chinese achieves similar performance as the model trained from Chinese. We thus find that language-universal symbolic and distributional representations are complementary for cross-lingual structure transfer.",
 }
 
-@inprcoeedings{Yin2019ComprehensibleCT,
+@inproceedings{Yin2019ComprehensibleCT,
   title={Comprehensible Context-driven Text Game Playing},
   author={Xusen Yin and Jonathan May},
   booktitle={Proc. 2019 IEEE Conference on Games (CoG)},
