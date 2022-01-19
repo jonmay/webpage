@@ -1,4 +1,3 @@
-
 @article{DBLP:journals/corr/abs-2104-10263,
   author    = {Alexander Spangher and
                Jonathan May},
@@ -277,6 +276,56 @@ series = {Checkmate '21}
 }
 
 
+@InBook{mythodologies-2019,
+  author =    {Joseph A. Dane and Jonathan May},
+  title =        {Begging The Question: Critical Reasoning in Chaucer Studies, Book History, and Humanistic Inquiry},
+  chapter =      {III.3: Evidence and Artificial Intelligence},
+  publisher =    {Marymount Institute Press},
+  year =         2019,
+  number =    {II},
+  series =    {Mythodologies},
+  pages =     {295--208}}
+
+
+@misc{yin2020question,
+      title={Question Generation for Supporting Informational Query Intents}, 
+      author={Xusen Yin and Jonathan May and Li Zhou and Kevin Small},
+      year={2020},
+      eprint={2010.09692},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@misc{aldarrab2020sequencetosequence,
+      title={Can Sequence-to-Sequence Models Crack Substitution Ciphers?}, 
+      author={Nada Aldarrab and Jonathan May},
+      year={2020},
+      eprint={2012.15229},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@misc{hambardzumyan2021warp,
+      title={WARP: Word-level Adversarial ReProgramming}, 
+      author={Karen Hambardzumyan and Hrant Khachatrian and Jonathan May},
+      year={2021},
+      eprint={2101.00121},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{spangher2021multitask,
+      title={Multitask Learning for Class-Imbalanced Discourse Classification}, 
+      author={Alexander Spangher and Jonathan May and Sz-rung Shiang and Lingjia Deng},
+      year={2021},
+      eprint={2101.00389},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
 
 @proceedings{semeval-2020-semantic,
     title = "Proceedings of the Fourteenth Workshop on Semantic Evaluation",
@@ -292,18 +341,6 @@ series = {Checkmate '21}
     publisher = "International Committee for Computational Linguistics",
     url = "https://www.aclweb.org/anthology/2020.semeval-1.0",
 }
-
-
-
-@InBook{mythodologies-2019,
-  author =    {Joseph A. Dane and Jonathan May},
-  title =        {Begging The Question: Critical Reasoning in Chaucer Studies, Book History, and Humanistic Inquiry},
-  chapter =      {III.3: Evidence and Artificial Intelligence},
-  publisher =    {Marymount Institute Press},
-  year =         2019,
-  number =    {II},
-  series =    {Mythodologies},
-  pages =     {295--208}}
 
 @proceedings{nlp-covid19-2020-nlp,
     title = "Proceedings of the 1st Workshop on {NLP} for {COVID-19} at {ACL} 2020",
@@ -409,6 +446,26 @@ series = {Checkmate '21}
     abstract = "Language understanding research is held back by a failure to relate language to the physical world it describes and to the social interactions it facilitates. Despite the incredible effectiveness of language processing models to tackle tasks after being trained on text alone, successful linguistic communication relies on a shared experience of the world. It is this shared experience that makes utterances meaningful. Natural language processing is a diverse field, and progress throughout its development has come from new representational theories, modeling techniques, data collection paradigms, and tasks. We posit that the present success of representation learning approaches trained on large, text-only corpora requires the parallel tradition of research on the broader physical and social context of language to address the deeper questions of communication.",
 }
 
+@inproceedings{lu-etal-2020-cross,
+    title = "Cross-lingual Structure Transfer for Zero-resource Event Extraction",
+    author = "Lu, Di  and
+      Subburathinam, Ananya  and
+      Ji, Heng  and
+      May, Jonathan  and
+      Chang, Shih-Fu  and
+      Sil, Avi  and
+      Voss, Clare",
+    booktitle = "Proceedings of the 12th Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://www.aclweb.org/anthology/2020.lrec-1.243",
+    pages = "1976--1981",
+    abstract = "Most of the current cross-lingual transfer learning methods for Information Extraction (IE) have been only applied to name tagging. To tackle more complex tasks such as event extraction we need to transfer graph structures (event trigger linked to multiple arguments with various roles) across languages. We develop a novel share-and-transfer framework to reach this goal with three steps: (1) Convert each sentence in any language to language-universal graph structures; in this paper we explore two approaches based on universal dependency parses and complete graphs, respectively. (2) Represent each node in the graph structure with a cross-lingual word embedding so that all sentences in multiple languages can be represented with one shared semantic space. (3) Using this common semantic space, train event extractors from English training data and apply them to languages that do not have any event annotations. Experimental results on three languages (Spanish, Russian and Ukrainian) without any annotations show this framework achieves comparable performance to a state-of-the-art supervised model trained from more than 1,500 manually annotated event mentions.",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
+}
 
 @inproceedings{cho-may-2020-grounding,
     title = "Grounding Conversations with Improvised Dialogues",
@@ -543,7 +600,7 @@ News Articles},
     abstract = "The identification of complex semantic structures such as events and entity relations, already a challenging Information Extraction task, is doubly difficult from sources written in under-resourced and under-annotated languages. We investigate the suitability of cross-lingual structure transfer techniques for these tasks. We exploit relation- and event-relevant language-universal features, leveraging both symbolic (including part-of-speech and dependency path) and distributional (including type representation and contextualized representation) information. By representing all entity mentions, event triggers, and contexts into this complex and structured multilingual common space, using graph convolutional networks, we can train a relation or event extractor from source language annotations and apply it to the target language. Extensive experiments on cross-lingual relation and event transfer among English, Chinese, and Arabic demonstrate that our approach achieves performance comparable to state-of-the-art supervised models trained on up to 3,000 manually annotated mentions: up to 62.6{\%} F-score for Relation Extraction, and 63.1{\%} F-score for Event Argument Role Labeling. The event argument role labeling model transferred from English to Chinese achieves similar performance as the model trained from Chinese. We thus find that language-universal symbolic and distributional representations are complementary for cross-lingual structure transfer.",
 }
 
-@inproceedings{Yin2019ComprehensibleCT,
+@inprcoeedings{Yin2019ComprehensibleCT,
   title={Comprehensible Context-driven Text Game Playing},
   author={Xusen Yin and Jonathan May},
   booktitle={Proc. 2019 IEEE Conference on Games (CoG)},
