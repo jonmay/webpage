@@ -1,5 +1,12 @@
 var fun_data = [
-	{
+  {
+      'flickr_link': "https://www.flickr.com/photos/183261364@N02/albums/72177720300176978/player"
+      'img_link': '',
+      'text': 'CUTELABNAME',
+      'description': ''
+
+  },
+  {
 		'flickr_link': 'https://www.flickr.com/photos/145494557@N05/albums/72157709869134676/player/',
 		'img_link': '',
 		'text': 'Lab Pictures',
