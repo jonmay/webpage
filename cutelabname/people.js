@@ -115,7 +115,7 @@ var people_data = [
 				'title': 'MS (CS)',
 				'image_url': 'https://www.kartikshenoy.com/img/Profile_Pic.jpg',
 				'website': 'https://www.kartikshenoy.com/',
-				'twitter': ''
+				'twitter': 'https://twitter.com/Kartikshenoyy'
 			},
 			{
 				'name': 'Darpan Jain',
@@ -141,6 +141,13 @@ var people_data = [
 				'title': '',
 				'image_url': 'img/placeholder.webp',
 				'website': '',
+				'twitter': ''
+			},
+			{
+				'name': 'Nada Aldarrab',
+				'title': '',
+				'image_url': 'https://nadaaldarrab.github.io/images/photo.jpg',
+				'website': 'https://nadaaldarrab.github.io/',
 				'twitter': ''
 			},
 		]
