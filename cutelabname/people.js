@@ -34,7 +34,15 @@ var people_data = [
 	},
 	{
 		'section_name': '',
-		'people': [
+		  'people': [
+			{
+				'name': 'Jacob Bremerman',
+				'title': 'PhD (CS)',
+				  'image_url': 'https://bremerman.me/authors/admin/avatar_huaf7408b48ada3e7aa82d3d3e9838e741_486333_270x270_fill_q75_lanczos_center.jpg',
+				'website': 'https://justin-cho.com/assets/portfolio.png',
+				'twitter': 'https://twitter.com/JLBrem'
+			},
+          
 			{
 				'name': 'Justin Cho',
 				'title': 'PhD (CS)',
@@ -43,24 +51,10 @@ var people_data = [
 				'twitter': 'https://twitter.com/HJCH0'
 			},
 			{
-				'name': 'Alex Spangher',
-				'title': 'PhD (CS)',
-				'image_url': 'https://www.isi.edu/research-groups-nlg/wp-content/uploads/sites/16/2022/02/spangher-1.jpg',
-				'website': 'http://alexander-spangher.com/',
-				'twitter': ''
-			},
-			{
 				'name': 'Katy Felkner',
 				'title': 'PhD (CS)',
 				'image_url': 'https://www.isi.edu/ai/wp-content/uploads/sites/6/2021/08/felkner-1.jpg',
 				'website': 'https://katyfelkner.com/',
-				'twitter': ''
-			},
-			{
-				'name': 'Meryem M\'hamdi',
-				'title': 'PhD (CS)',
-				'image_url': 'https://www.isi.edu/wp-content/uploads/sites/6/2021/08/meryem-1.jpg',
-				'website': 'https://meryemmhamdi1.github.io/',
 				'twitter': ''
 			},
 			{
@@ -71,25 +65,11 @@ var people_data = [
 				'twitter': 'https://twitter.com/mgheini'
 			},
 			{
-				'name': 'Fei Wang',
+				'name': 'Tenghao Huang',
 				'title': 'PhD (CS)',
-				'image_url': 'img/people_pics/profile - Fei Wang.jpg',
-				'website': 'https://feiwang96.github.io/',
-				'twitter': 'https://twitter.com/fwang_nlp'
-			},
-			{
-				'name': 'Nan Xu',
-				'title': 'PhD (CS)',
-				'image_url': 'img/people_pics/NanXU - Nan Xu.png',
-				'website': 'https://sites.google.com/site/xunannancy',
-				'twitter': 'https://twitter.com/xunannancy'
-			},
-			{
-				'name': 'Wenxuan Zhou',
-				'title': 'PhD (CS)',
-				'image_url': 'img/people_pics/photo - Wenxuan Zhou.jpg',
-				'website': 'https://wzhouad.github.io/',
-				'twitter': 'https://twitter.com/xunannancy'
+				'image_url': 'img/people_pics/1593181703658 - Tenghao Huang.jpg',
+				'website': 'https://tenghaohuang.github.io/website/',
+				'twitter': 'https://twitter.com/TenghaoHuang45'
 			},
 			{
 				'name': 'Qin Liu',
@@ -99,11 +79,40 @@ var people_data = [
 				'twitter': 'https://twitter.com/xunannancy'
 			},
 			{
-				'name': 'Tenghao Huang',
+				'name': 'Meryem M\'hamdi',
 				'title': 'PhD (CS)',
-				'image_url': 'img/people_pics/1593181703658 - Tenghao Huang.jpg',
-				'website': 'https://tenghaohuang.github.io/website/',
-				'twitter': 'https://twitter.com/TenghaoHuang45'
+				'image_url': 'https://www.isi.edu/wp-content/uploads/sites/6/2021/08/meryem-1.jpg',
+				'website': 'https://meryemmhamdi1.github.io/',
+				'twitter': ''
+			},
+
+			  {
+				'name': 'Alex Spangher',
+				'title': 'PhD (CS)',
+				'image_url': 'https://www.isi.edu/research-groups-nlg/wp-content/uploads/sites/16/2022/02/spangher-1.jpg',
+				'website': 'http://alexander-spangher.com/',
+				'twitter': ''
+			},
+			{
+				'name': 'Nan Xu',
+				'title': 'PhD (CS)',
+				'image_url': 'img/people_pics/NanXU - Nan Xu.png',
+				'website': 'https://sites.google.com/site/xunannancy',
+				'twitter': 'https://twitter.com/xunannancy'
+			},
+			{
+				'name': 'Fei Wang',
+				'title': 'PhD (CS)',
+				'image_url': 'img/people_pics/profile - Fei Wang.jpg',
+				'website': 'https://feiwang96.github.io/',
+				'twitter': 'https://twitter.com/fwang_nlp'
+			},
+			{
+				'name': 'Wenxuan Zhou',
+				'title': 'PhD (CS)',
+				'image_url': 'img/people_pics/photo - Wenxuan Zhou.jpg',
+				'website': 'https://wzhouad.github.io/',
+				'twitter': 'https://twitter.com/xunannancy'
 			},
 		]
 	},
