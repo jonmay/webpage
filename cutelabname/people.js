@@ -42,7 +42,6 @@ var people_data = [
 				'website': 'https://justin-cho.com/assets/portfolio.png',
 				'twitter': 'https://twitter.com/JLBrem'
 			},
-          
 			{
 				'name': 'Justin Cho',
 				'title': 'PhD (CS)',
@@ -118,20 +117,29 @@ var people_data = [
 	},
 	{
 		'section_name': '',
-		'people': [
-			{
+		  'people': [
+          {
+				'name': 'Darpan Jain',
+				'title': 'MS (ECE)',
+				'image_url': 'img/people_pics/Darpan\ Jain.jpeg',
+				'website': 'https://darpanjain.me',
+				'twitter': 'https://twitter.com/FunnyFriedDerp'
+			},
+        {
+				'name': 'Apoorva Sharma',
+				'title': 'MS (CS)',
+				'image_url': 'https://www.kartikshenoy.com/img/Profile_Pic.jpg',
+				    'website': 'https://www.linkedin.com/in/sharma-apoorva/',
+            'twitter': ''
+			},
+
+
+        {
 				'name': 'Kartik Shenoy',
 				'title': 'MS (CS)',
 				'image_url': 'https://www.kartikshenoy.com/img/Profile_Pic.jpg',
 				'website': 'https://www.kartikshenoy.com/',
 				'twitter': 'https://twitter.com/Kartikshenoyy'
-			},
-			{
-				'name': 'Darpan Jain',
-				'title': 'MS (CS)',
-				'image_url': 'img/people_pics/Darpan\ Jain.jpeg',
-				'website': 'https://darpan-jain.github.io',
-				'twitter': 'https://twitter.com/FunnyFriedDerp'
 			},
 		]
 	},
