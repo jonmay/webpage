@@ -20,7 +20,7 @@ var news_data = [
         'website_url': 'https://2022.naacl.org/blog/best-papers/',
         'additional_text': ''
     },
-    {
+/*    {
         'title': 'CUTELABNAME director Jonathan May has been promoted to Research Associate Professor.',
         'date': '7/1/2022', //MM/DD/YYYY
         'website_text': '',
@@ -61,7 +61,7 @@ var news_data = [
         'website_text': '',
         'website_url': '',
         'additional_text': ''
-    },
+    },*/
 	  {
 		'title': 'Omegalive.com (Greek)',
 		'date': '8/16/2020', //MM/DD/YYYY
