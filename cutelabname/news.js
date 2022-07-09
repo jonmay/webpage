@@ -1,7 +1,7 @@
 /*
 ,
     {
-        'title': ''
+        'title': '',
         'date': 'x/x/2022', //MM/DD/YYYY
         'website_text': '',
         'website_url': 'https://',
@@ -21,14 +21,14 @@ var news_data = [
         'additional_text': ''
     },
     {
-        'title': 'We have four papers at NAACL 2022: one in the main conference, one in Findings, one in the industry track. and one at the Queer in AI Workshop.'
+        'title': 'We have four papers at NAACL 2022: one in the main conference, one in Findings, one in the industry track. and one at the Queer in AI Workshop.',
         'date': '6/15/2022', //MM/DD/YYYY
         'website_text': 'NAACL 2022 main conference schedule',
         'website_url': 'https://2022.naacl.org/program/schedule/',
         'additional_text': ''
     },
     {
-        'title': 'Congratulations to Katy Felkner for winning an NSF Graduate Research Fellowship!'
+        'title': 'Congratulations to Katy Felkner for winning an NSF Graduate Research Fellowship!',
         'date': '4/3/2022', //MM/DD/YYYY
         'website_text': 'About GRFP',
         'website_url': 'https://www.nsfgrfp.org/resources/about-grfp/',
