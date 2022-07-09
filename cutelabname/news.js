@@ -49,8 +49,7 @@ var news_data = [
         'additional_text': ''
     },
     {
-        'title': 'Congratulations to Thamme Gowda on passing his dissertation defense for his thesis, "The Inevitable Problem of
-Rare Phenomena Learning in Machine Translation". TG is CUTELABNAME\'s second PhD recipient. He will join Microsoft as a Research Scientist.',
+        'title': 'Congratulations to Thamme Gowda on passing his dissertation defense for his thesis, "The Inevitable Problem of Rare Phenomena Learning in Machine Translation". TG is CUTELABNAME\'s second PhD recipient.',
         'date': '3/28/2022', //MM/DD/YYYY
         'website_text': '',
         'website_url': '',
