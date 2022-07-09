@@ -1,6 +1,6 @@
 var fun_data = [
   {
-      'flickr_link': "https://www.flickr.com/photos/183261364@N02/albums/72177720300176978/player"
+      'flickr_link': "https://www.flickr.com/photos/183261364@N02/albums/72177720300176978/player",
       'img_link': '',
       'text': 'CUTELABNAME',
       'description': ''
