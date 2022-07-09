@@ -20,7 +20,7 @@ var news_data = [
         'website_url': 'https://2022.naacl.org/blog/best-papers/',
         'additional_text': ''
     },
-/*    {
+    {
         'title': 'CUTELABNAME director Jonathan May has been promoted to Research Associate Professor.',
         'date': '7/1/2022', //MM/DD/YYYY
         'website_text': '',
@@ -34,13 +34,13 @@ var news_data = [
         'website_url': 'https://2022.naacl.org/program/schedule/',
         'additional_text': ''
     },
-    {
+/*    {
         'title': 'Congratulations to Nada Aldarrab on passing her dissertation defense for her thesis, "Automatic Decipherment of Historical Manuscripts". Nada is CUTELABNAME\'s third PhD recipient. She will join King Abdulaziz University as an Assistant Professor.',
         'date': '6/13/2022', //MM/DD/YYYY
         'website_text': '',
         'website_url': '',
         'additional_text': ''
-    },
+        },*/
     {
         'title': 'Congratulations to Katy Felkner for winning an NSF Graduate Research Fellowship!',
         'date': '4/3/2022', //MM/DD/YYYY
@@ -48,7 +48,7 @@ var news_data = [
         'website_url': 'https://www.nsfgrfp.org/resources/about-grfp/',
         'additional_text': ''
     },
-    {
+/*    {
         'title': 'Congratulations to Thamme Gowda on passing his dissertation defense for his thesis, "The Inevitable Problem of Rare Phenomena Learning in Machine Translation". TG is CUTELABNAME\'s second PhD recipient.',
         'date': '3/28/2022', //MM/DD/YYYY
         'website_text': '',
