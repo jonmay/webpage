@@ -128,7 +128,7 @@ var people_data = [
         {
 				'name': 'Apoorva Sharma',
 				'title': 'MS (CS)',
-				'image_url': 'https://www.kartikshenoy.com/img/Profile_Pic.jpg',
+				    'image_url': 'https://media-exp1.licdn.com/dms/image/C4D03AQFabjDagZ3CAw/profile-displayphoto-shrink_200_200/0/1647044960383?e=1662595200&v=beta&t=DZqZC8mN07qDRGMopkluKZM9OWw5m6fqzGPPNBe4YXk',
 				    'website': 'https://www.linkedin.com/in/sharma-apoorva/',
             'twitter': ''
 			},
