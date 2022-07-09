@@ -1,13 +1,12 @@
 var news_data = [
     {
         'title': 'Congratulations to CUTELABNAMEr Alexander Spangher for his Honorable Mention award at NAACL 2022!',
-        'date': '7/1/2022',
+        'date': '7/1/2022', //MM/DD/YYYY
         'website_text': 'Announcement',
         'website_url': 'https://2022.naacl.org/blog/best-papers/',
         'additional_text': ''
-}
-    ,
-	  {        
+    },
+	  {
 		'title': 'Omegalive.com (Greek)',
 		'date': '8/16/2020', //MM/DD/YYYY
 		'website_text': 'Είσαι σίγουρος ότι μπορείς να καταλάβεις αν μιλάς σε άνθρωπο ή ρομπότ',
