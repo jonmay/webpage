@@ -1,4 +1,37 @@
+@inproceedings{yu-etal-2022-building,
+    title = "Building an Event Extractor with Only a Few Examples",
+    author = "Yu, Pengfei  and
+      Zhang, Zixuan  and
+      Voss, Clare  and
+      May and Heng Ji, Jonathan",
+    booktitle = "Proceedings of the Third Workshop on Deep Learning for Low-Resource Natural Language Processing",
+    month = jul,
+    year = "2022",
+    address = "Hybrid",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.deeplo-1.11",
+    pages = "102--109",
+    abstract = "t",
+}
 
+@inproceedings{joshi-etal-2022-augmenting,
+    title = "Augmenting Training Data for Massive Semantic Matching Models in Low-Traffic {E}-commerce Stores",
+    author = "Joshi, Ashutosh  and
+      Vishwanath, Shankar  and
+      Teo, Choon  and
+      Petricek, Vaclav  and
+      Vishwanathan, Vishy  and
+      Bhagat, Rahul  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Industry Track",
+    month = jul,
+    year = "2022",
+    address = "Hybrid: Seattle, Washington + Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-industry.19",
+    pages = "160--167",
+    abstract = "Extreme multi-label classification (XMC) systems have been successfully applied in e-commerce (Shen et al., 2020; Dahiya et al., 2021) for retrieving products based on customer behavior. Such systems require large amounts of customer behavior data (e.g. queries, clicks, purchases) for training. However, behavioral data is limited in low-traffic e-commerce stores, impacting performance of these systems. In this paper, we present a technique that augments behavioral training data via query reformulation. We use the Aggregated Label eXtreme Multi-label Classification (AL-XMC) system (Shen et al., 2020) as an example semantic matching model and show via crowd-sourced human judgments that, when the training data is augmented through query reformulations, the quality of AL-XMC improves over a baseline that does not use query reformulation. We also show in online A/B tests that our method significantly improves business metrics for the AL-XMC model.",
+}
 
 
 @misc{https://doi.org/10.48550/arxiv.2112.08321,
@@ -13,16 +46,23 @@
 }
 
 
-@misc{https://doi.org/10.48550/arxiv.2205.00344,
-  doi = {10.48550/ARXIV.2205.00344},
-  url = {https://arxiv.org/abs/2205.00344},
-  author = {Chawla, Kushal and Lucas, Gale M. and May, Jonathan and Gratch, Jonathan},
-  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Opponent Modeling in Negotiation Dialogues by Related Data Adaptation},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
+@inproceedings{chawla-etal-2022-opponent,
+    title = "Opponent Modeling in Negotiation Dialogues by Related Data Adaptation",
+    author = "Chawla, Kushal  and
+      Lucas, Gale  and
+      May, Jonathan  and
+      Gratch, Jonathan",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2022",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-naacl.50",
+    pages = "661--674",
+    abstract = "Opponent modeling is the task of inferring another party{'}s mental state within the context of social interactions. In a multi-issue negotiation, it involves inferring the relative importance that the opponent assigns to each issue under discussion, which is crucial for finding high-value deals. A practical model for this task needs to infer these priorities of the opponent on the fly based on partial dialogues as input, without needing additional annotations for training. In this work, we propose a ranker for identifying these priorities from negotiation dialogues. The model takes in a partial dialogue as input and predicts the priority order of the opponent. We further devise ways to adapt related data sources for this task to provide more explicit supervision for incorporating the opponent{'}s preferences and offers, as a proxy to relying on granular utterance-level annotations. We show the utility of our proposed approach through extensive experiments based on two dialogue datasets. We find that the proposed data adaptations lead to strong performance in zero-shot and few-shot scenarios. Moreover, they allow the model to perform better than baselines while accessing fewer utterances from the opponent. We release our code to support future work in this direction.",
 }
+
+
 
 
 @misc{https://doi.org/10.48550/arxiv.2205.11152,
@@ -61,16 +101,22 @@
 }
 
 
-@article{https://doi.org/10.48550/arxiv.2206.07106,
-  doi = {10.48550/ARXIV.2206.07106},
-  url = {https://arxiv.org/abs/2206.07106},
-  author = {Spangher, Alexander and Ren, Xiang and May, Jonathan and Peng, Nanyun},
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {NewsEdits: A News Article Revision Dataset and a Document-Level Reasoning Challenge},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
+@inproceedings{spangher-etal-2022-newsedits,
+    title = "{N}ews{E}dits: A News Article Revision Dataset and a Novel Document-Level Reasoning Challenge",
+    author = "Spangher, Alexander  and
+      Ren, Xiang  and
+      May, Jonathan  and
+      Peng, Nanyun",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.10",
+    pages = "127--157",
+    abstract = "News article revision histories provide clues to narrative and factual evolution in news articles. To facilitate analysis of this evolution, we present the first publicly available dataset of news revision histories, NewsEdits. Our dataset is large-scale and multilingual; it contains 1.2 million articles with 4.6 million versions from over 22 English- and French-language newspaper sources based in three countries, spanning 15 years of coverage (2006-2021).We define article-level edit actions: Addition, Deletion, Edit and Refactor, and develop a high-accuracy extraction algorithm to identify these actions. To underscore the factual nature of many edit actions, we conduct analyses showing that added and deleted sentences are more likely to contain updating events, main content and quotes than unchanged sentences. Finally, to explore whether edit actions are predictable, we introduce three novel tasks aimed at predicting actions performed during version updates. We show that these tasks are possible for expert humans but are challenging for large NLP models. We hope this can spur research in narrative framing and help provide predictive tools for journalists chasing breaking news.",
 }
+
 
 
 @misc{https://doi.org/10.48550/arxiv.2206.11083,

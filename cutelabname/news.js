@@ -42,7 +42,7 @@ var news_data = [
         'additional_text': ''
         },*/
     {
-        'title': 'Congratulations to Katy Felkner for winning an NSF Graduate Research Fellowship!',
+        'title': 'Congratulations to Katy Felkner for winning an NSF Graduate Research Fellowship.',
         'date': '4/3/2022', //MM/DD/YYYY
         'website_text': 'About GRFP',
         'website_url': 'https://www.nsfgrfp.org/resources/about-grfp/',
