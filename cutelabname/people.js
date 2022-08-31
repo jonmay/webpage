@@ -111,7 +111,14 @@ var people_data = [
 				'title': 'PhD (CS)',
 				'image_url': 'img/people_pics/photo - Wenxuan Zhou.jpg',
 				'website': 'https://wzhouad.github.io/',
-				'twitter': 'https://twitter.com/xunannancy'
+				'twitter': ''
+			},
+			{
+				'name': 'Nuan Wen',
+				'title': 'PhD (CS)',
+				'image_url': 'img/people_pics/16561661892632_.pic - Nuan Wen.jpg',
+				'website': 'https://www.linkedin.com/in/nuanwen/',
+				'twitter': ''
 			},
 		]
 	},
