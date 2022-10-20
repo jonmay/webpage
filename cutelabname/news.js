@@ -13,6 +13,28 @@
 
 
 var news_data = [
+
+    {
+        'title': 'Jon on moderation for a podcast by the Indian Express newspaper.',
+        'date': '10/20/2022', //MM/DD/YYYY
+        'website_text': 'Mind your language... moderating internet conversations',
+        'website_url': 'https://indianexpress.com/audio/our-own-devices/mind-your-language-moderating-internet-conversations/8221083/',
+        'additional_text': ''
+    },
+    {
+        'title': 'CUTELABNAME has three papers accepted to EMNLP and three papers accepted to Findings of EMNLP.',
+        'date': '10/6/2022', //MM/DD/YYYY
+        'website_text': '',
+        'website_url': '',
+        'additional_text': ''
+    },
+    {
+        'title': 'Katy Felkner in the Daily Trojan for her work in language translation at the border.',
+        'date': '9/20/2022', //MM/DD/YYYY
+        'website_text': 'PhD Student Decodes Language Barriers',
+        'website_url': 'https://dailytrojan.com/2022/09/20/ph-d-student-decodes-language-barriers/',
+        'additional_text': ''
+    },
     {
         'title': 'Congratulations to Alexander Spangher for his Honorable Mention award at NAACL 2022.',
         'date': '7/1/2022', //MM/DD/YYYY
