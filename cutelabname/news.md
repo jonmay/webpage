@@ -4,6 +4,7 @@
 * 7/1/2022: Congratulations to Alexander Spangher for his Honorable Mention award at NAACL 2022: [Announcement](https://2022.naacl.org/blog/best-papers/)
 * 7/1/2022: CUTELABNAME director Jonathan May has been promoted to Research Associate Professor
 * 6/15/2022: We have four papers at NAACL 2022: one in the main conference, one in Findings, one in the industry track. and one at the Queer in AI Workshop.: [NAACL 2022 main conference schedule](https://2022.naacl.org/program/schedule/)
+* 6/13/2022: Congratulations to Nada Aldarrab on passing her dissertation defense for her thesis, "Automatic Decipherment of Historical Manuscripts". Nada is CUTELABNAME's third PhD recipient. She will join King Abdulaziz University as an Assistant Professor.
 * 4/3/2022: Congratulations to Katy Felkner for winning an NSF Graduate Research Fellowship.: [About GRFP](https://www.nsfgrfp.org/resources/about-grfp/)
 * 8/16/2020: Omegalive.com (Greek): [Είσαι σίγουρος ότι μπορείς να καταλάβεις αν μιλάς σε άνθρωπο ή ρομπότ](https://www.omegalive.com.cy/scitec/2020/08/16/%CE%B5%CE%AF%CF%83%CE%B1%CE%B9-%CF%83%CE%AF%CE%B3%CE%BF%CF%85%CF%81%CE%BF%CF%82-%CF%8C%CF%84%CE%B9-%CE%BC%CF%80%CE%BF%CF%81%CE%B5%CE%AF%CF%82-%CE%BD%CE%B1-%CE%BA%CE%B1%CF%84%CE%B1%CE%BB%CE%AC%CE%B2%CE%B5%CE%B9%CF%82-%CE%B1%CE%BD-%CE%BC%CE%B9%CE%BB%CE%AC%CF%82-%CF%83%CE%B5-%CE%AC%CE%BD%CE%B8%CF%81%CF%89%CF%80%CE%BF-%CE%AE-%CF%81%CE%BF%CE%BC%CF%80%CF%8C%CF%84/)
 * 8/7/2020: Mindbounce: [Meet the Chatbot That’s Learning to Improvise](https://www.mindbounce.com/445861/meet-the-chatbot-thats-learning-to-improvise/)
