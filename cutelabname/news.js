@@ -72,7 +72,7 @@ var news_data = [
         'website_text': '',
         'website_url': '',
         'additional_text': ''
-        },*/
+        },
     {
         'title': 'Congratulations to Katy Felkner for winning an NSF Graduate Research Fellowship.',
         'date': '4/3/2022', //MM/DD/YYYY
