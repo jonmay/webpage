@@ -14,6 +14,16 @@
 
 var news_data = [
 
+
+
+    {
+        'title': 'Jon quoted in Wired article.',
+        'date': '11/15/2022', //MM/DD/YYYY
+        'website_text': 'How a Translation App Helped My Mother and Me Say I Love You',
+        'website_url': 'https://www.wired.com/story/how-translation-app-helped-me-say-i-love-you-my-mother/',
+        'additional_text': ''
+    },
+    
     {
         'title': 'Jon on moderation for a podcast by the Indian Express newspaper.',
         'date': '10/20/2022', //MM/DD/YYYY
@@ -56,8 +66,8 @@ var news_data = [
         'website_url': 'https://2022.naacl.org/program/schedule/',
         'additional_text': ''
     },
-/*    {
-        'title': 'Congratulations to Nada Aldarrab on passing her dissertation defense for her thesis, "Automatic Decipherment of Historical Manuscripts". Nada is CUTELABNAME\'s third PhD recipient. She will join King Abdulaziz University as an Assistant Professor.',
+    {
+        'title': 'Congratulations to Nada Aldarrab on passing her dissertation defense. Nada is the third PhD recipient from CUTELABNAME. She will join King Abdulaziz University as an Assistant Professor.',
         'date': '6/13/2022', //MM/DD/YYYY
         'website_text': '',
         'website_url': '',
@@ -70,20 +80,20 @@ var news_data = [
         'website_url': 'https://www.nsfgrfp.org/resources/about-grfp/',
         'additional_text': ''
     },
-/*    {
-        'title': 'Congratulations to Thamme Gowda on passing his dissertation defense for his thesis, "The Inevitable Problem of Rare Phenomena Learning in Machine Translation". TG is CUTELABNAME\'s second PhD recipient.',
+    {
+        'title': 'Congratulations to Thamme Gowda  on passing his dissertation defense. TG is the second PhD recipient from CUTELABNAME. He will join Microsoft as a Research Scientist.',
         'date': '3/28/2022', //MM/DD/YYYY
         'website_text': '',
         'website_url': '',
         'additional_text': ''
     },
     {
-        'title': 'Congratulations to Xusen Yin on passing his dissertation defense for his thesis, "Generalized Sequential Decision-Making via Language". Xusen is CUTELABNAME\'s first PhD recipient. He will join Amazon as an Applied Scientist.',
+        'title': 'Congratulations to Xusen Yin on passing his dissertation defense. Xusen is the first PhD recipient from CUTELABNAME. He will join Amazon as an Applied Scientist.',
         'date': '6/14/2021', //MM/DD/YYYY
         'website_text': '',
         'website_url': '',
         'additional_text': ''
-    },*/
+    },
 	  {
 		'title': 'Omegalive.com (Greek)',
 		'date': '8/16/2020', //MM/DD/YYYY
