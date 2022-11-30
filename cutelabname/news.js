@@ -14,8 +14,13 @@
 
 var news_data = [
 
-
-
+    {
+        'title': 'Computational Journalism work of Alex Spangher covered by ISI news.',
+        'date': '11/29/2022', //MM/DD/YYYY
+        'website_text': 'Rescuing Local Journalism, One AI Tool At A Time',
+        'website_url': 'https://www.isi.edu/news/52459/ai-tool-helps-rescue-local-journalism/',
+        'additional_text': ''
+    },
     {
         'title': 'Jon quoted in Wired article.',
         'date': '11/15/2022', //MM/DD/YYYY
