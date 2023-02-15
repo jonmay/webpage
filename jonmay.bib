@@ -1,3 +1,59 @@
+
+@inproceedings{cho-etal-2022-know,
+    title = "Know Thy Strengths: Comprehensive Dialogue State Tracking Diagnostics",
+    author = "Cho, Hyundong  and
+      Sankar, Chinnadhurai  and
+      Lin, Christopher  and
+      Sadagopan, Kaushik  and
+      Shayandeh, Shahin  and
+      Celikyilmaz, Asli  and
+      May, Jonathan  and
+      Beirami, Ahmad",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.391",
+    pages = "5345--5359",
+    abstract = "Recent works that revealed the vulnerability of dialogue state tracking (DST) models to distributional shifts have made holistic comparisons on robustness and qualitative analyses increasingly important for understanding their relative performance. We present our findings from standardized and comprehensive DST diagnoses, which have previously been sparse and uncoordinated, using our toolkit, CheckDST, a collection of robustness tests and failure mode analytics. We discover that different classes of DST models have clear strengths and weaknesses, where generation models are more promising for handling language variety while span-based classification models are more robust to unseen entities. Prompted by this discovery, we also compare checkpoints from the same model and find that the standard practice of selecting checkpoints using validation loss/accuracy is prone to overfitting and each model class has distinct patterns of failure. Lastly, we demonstrate how our diagnoses motivate a pre-finetuning procedure with non-dialogue data that offers comprehensive improvements to generation models by alleviating the impact of distributional shifts through transfer learning.",
+}
+
+@misc{https://doi.org/10.48550/arxiv.2212.00339,
+  doi = {10.48550/ARXIV.2212.00339},
+  url = {https://arxiv.org/abs/2212.00339},
+  author = {Chen, Kai and He, Zihao and Chang, Rong-Ching and May, Jonathan and Lerman, Kristina},
+  keywords = {Computation and Language (cs.CL), Computers and Society (cs.CY), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Anger Breeds Controversy: Analyzing Controversy and Emotions on Reddit},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+
+@misc{https://doi.org/10.48550/arxiv.2210.05096,
+  doi = {10.48550/ARXIV.2210.05096},
+  url = {https://arxiv.org/abs/2210.05096},
+  author = {Gowda, Thamme and Gheini, Mozhdeh and May, Jonathan},
+  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Computers and Society (cs.CY), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Checks and Strategies for Enabling Code-Switched Machine Translation},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution Share Alike 4.0 International}
+}
+
+@misc{https://doi.org/10.48550/arxiv.2209.10655,
+  doi = {10.48550/ARXIV.2209.10655},
+  url = {https://arxiv.org/abs/2209.10655},
+  author = {Ma, Xuezhe and Zhou, Chunting and Kong, Xiang and He, Junxian and Gui, Liangke and Neubig, Graham and May, Jonathan and Zettlemoyer, Luke},
+  keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Mega: Moving Average Equipped Gated Attention},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
 @inproceedings{yu-etal-2022-building,
     title = "Building an Event Extractor with Only a Few Examples",
     author = "Yu, Pengfei  and
@@ -89,15 +145,19 @@
 }
 
 
-@misc{https://doi.org/10.48550/arxiv.2205.12514,
-  doi = {10.48550/ARXIV.2205.12514},
-  url = {https://arxiv.org/abs/2205.12514},
-  author = {Bremerman, Jacob and Ren, Xiang and May, Jonathan},
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Machine Translation Robustness to Natural Asemantic Variation},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
+@inproceedings{bremerman-etal-2022-machine,
+    title = "Machine Translation Robustness to Natural Asemantic Variation",
+    author = "Bremerman, Jacob  and
+      Ren, Xiang  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.230",
+    pages = "3517--3532",
+    abstract = "Current Machine Translation (MT) models still struggle with more challenging input, such as noisy data and tail-end words and phrases. Several works have addressed this robustness issue by identifying specific categories of noise and variation then tuning models to perform better on them. An important yet under-studied category involves minor variations in nuance (non-typos) that preserve meaning w.r.t. the target language. We introduce and formalize this category as Natural Asemantic Variation (NAV) and investigate it in the context of MT robustness. We find that existing MT models fail when presented with NAV data, but we demonstrate strategies to improve performance on NAV by fine-tuning them with human-generated variations. We also show that NAV robustness can be transferred across languages and find that synthetic perturbations can achieve some but not all of the benefits of organic NAV data.",
 }
 
 
@@ -119,17 +179,20 @@
 
 
 
-@misc{https://doi.org/10.48550/arxiv.2206.11083,
-  doi = {10.48550/ARXIV.2206.11083},
-  url = {https://arxiv.org/abs/2206.11083},
-  author = {Sun, Jiao and Swayamdipta, Swabha and May, Jonathan and Ma, Xuezhe},
-  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Investigating the Benefits of Free-Form Rationales},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
+    title = "Investigating the Benefits of Free-Form Rationales",
+    author = "Sun, Jiao  and
+      Swayamdipta, Swabha  and
+      May, Jonathan  and
+      Ma, Xuezhe",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.432",
+    pages = "5867--5882",
+    abstract = "Free-form rationales aim to aid model interpretability by supplying the background knowledge that can help understand model decisions. Crowdsourced rationales are provided for commonsense QA instances in popular datasets such as CoS-E and ECQA, but their utility remains under-investigated. We present human studies which show that ECQA rationales indeed provide additional background information to understand a decision, while over 88{\%} of CoS-E rationales do not. Inspired by this finding, we ask: can the additional context provided by free-form rationales benefit models, similar to human users? We investigate the utility of rationales as an additional source of supervision, by varying the quantity and quality of rationales during training. After controlling for instances where rationales leak the correct answer while not providing additional background knowledge, we find that incorporating only 5{\%} of rationales during training can boost model performance by 47.22{\%} for CoS-E and 57.14{\%} for ECQA during inference. Moreover, we also show that rationale quality matters: compared to crowdsourced rationales, T5-generated rationales provide not only weaker supervision to models, but are also not helpful for humans in aiding model interpretability.",
 }
-
 
 @misc{https://doi.org/10.48550/arxiv.2206.11484,
   doi = {10.48550/ARXIV.2206.11484},
@@ -143,16 +206,18 @@
 }
 
 
-
-@misc{https://doi.org/10.48550/arxiv.2205.12527,
-  doi = {10.48550/ARXIV.2205.12527},
-  url = {https://arxiv.org/abs/2205.12527},
-  author = {Aldarrab, Nada and May, Jonathan},
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Segmenting Numerical Substitution Ciphers},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual, non-exclusive license}
+@inproceedings{aldarrab-may-2022-segmenting,
+    title = "Segmenting Numerical Substitution Ciphers",
+    author = "Aldarrab, Nada  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.44",
+    pages = "706--714",
+    abstract = "Deciphering historical substitution ciphers is a challenging problem. Example problems that have been previously studied include detecting cipher type, detecting plaintext language, and acquiring the substitution key for segmented ciphers. However, attacking unsegmented ciphers is still a challenging task. Segmentation (i.e. finding substitution units) is essential for cracking those ciphers. In this work, we propose the first automatic methods to segment those ciphers using Byte Pair Encoding (BPE) and unigram language models. Our methods achieve an average segmentation error of 2{\%} on 100 randomly-generated monoalphabetic ciphers and 27{\%} on 3 real historical homophonic ciphers. We also propose a method for solving non-deterministic ciphers with existing keys using a lattice and a pretrained language model. Our method leads to the full solution of the IA cipher; a real historical cipher that has not been fully solved until this work.",
 }
 
 
@@ -971,18 +1036,10 @@ number = {1},
 pages = {19-31},
 year = {2017},
 doi = {10.1089/big.2017.0012},
-    note ={PMID: 28328252},
-
-URL = { 
-        https://doi.org/10.1089/big.2017.0012
-
-},
-eprint = { 
-        https://doi.org/10.1089/big.2017.0012
-
-}
-,
-    abstract = { Abstract The ability of automatically recognizing and typing entities in natural language without prior knowledge (e.g., predefined entity types) is a major challenge in processing such data. Most existing entity typing systems are limited to certain domains, genres, and languages. In this article, we propose a novel unsupervised entity-typing framework by combining symbolic and distributional semantics. We start from learning three types of representations for each entity mention: general semantic representation, specific context representation, and knowledge representation based on knowledge bases. Then we develop a novel joint hierarchical clustering and linking algorithm to type all mentions using these representations. This framework does not rely on any annotated data, predefined typing schema, or handcrafted features; therefore, it can be quickly adapted to a new domain, genre, and/or language. Experiments on genres (news and discussion forum) show comparable performance with state-of-the-art supervised typing systems trained from a large amount of labeled data. Results on various languages (English, Chinese, Japanese, Hausa, and Yoruba) and domains (general and biomedical) demonstrate the portability of our framework. }
+note ={PMID: 28328252},
+URL = {https://doi.org/10.1089/big.2017.0012},
+eprint = {https://doi.org/10.1089/big.2017.0012},
+abstract = { Abstract The ability of automatically recognizing and typing entities in natural language without prior knowledge (e.g., predefined entity types) is a major challenge in processing such data. Most existing entity typing systems are limited to certain domains, genres, and languages. In this article, we propose a novel unsupervised entity-typing framework by combining symbolic and distributional semantics. We start from learning three types of representations for each entity mention: general semantic representation, specific context representation, and knowledge representation based on knowledge bases. Then we develop a novel joint hierarchical clustering and linking algorithm to type all mentions using these representations. This framework does not rely on any annotated data, predefined typing schema, or handcrafted features; therefore, it can be quickly adapted to a new domain, genre, and/or language. Experiments on genres (news and discussion forum) show comparable performance with state-of-the-art supervised typing systems trained from a large amount of labeled data. Results on various languages (English, Chinese, Japanese, Hausa, and Yoruba) and domains (general and biomedical) demonstrate the portability of our framework. }
 }
 
 @InProceedings{may-priyadarshi:2017:SemEval,
