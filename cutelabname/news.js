@@ -17,7 +17,7 @@ var news_data = [
     {
         'title': 'Jon on ChatGPT for The Conversation.',
         'date': '2/2/2023', //MM/DD/YYYY
-        'website_text': 'ChatGPT is great – you’re just using it wrong',
+        'website_text': 'ChatGPT is great – youre just using it wrong',
         'website_url': 'https://theconversation.com/chatgpt-is-great-youre-just-using-it-wrong-198848',
         'additional_text': ''
 
