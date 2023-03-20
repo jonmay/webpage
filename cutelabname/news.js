@@ -13,7 +13,23 @@
 
 
 var news_data = [
+    {
+        'title': 'Jon on GPT-4 for Scientific American.',
+        'date': '3/16/2023', //MM/DD/YYYY
+        'website_text': 'What the New GPT-4 AI Can Do',
+        'website_url': 'https://www.scientificamerican.com/article/what-the-new-gpt-4-ai-can-do/',
+        'additional_text': ''
 
+    },
+    {
+        'title': 'Jon on ChatGPT for Radio New Zealand.',
+        'date': '2/12/2023', //MM/DD/YYYY
+        'website_text': 'Dr Jonathan May: ChatGPT is just another tool we can use',
+        'website_url': 'https://www.rnz.co.nz/national/programmes/sunday/audio/2018877393/dr-jonathan-may-chatgpt-is-just-another-tool-we-can-use',
+        'additional_text': ''
+
+    },
+    
     {
         'title': 'Jon on ChatGPT for The Conversation.',
         'date': '2/2/2023', //MM/DD/YYYY
