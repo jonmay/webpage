@@ -13,6 +13,7 @@
 
 
 var news_data = [
+
     {
         'title': 'Jon on GPT-4 for Scientific American.',
         'date': '3/16/2023', //MM/DD/YYYY
@@ -21,6 +22,15 @@ var news_data = [
         'additional_text': ''
 
     },
+    {
+        'title': 'Jon live on AirTalk (89.3 KPCC).',
+        'date': '2/17/2023', //MM/DD/YYYY
+        'website_text': "Microsoft's New AI Search Engine Is Having Some Wild Convos. Is The Tech Really Ready For Human Interaction?",
+        'website_url': 'https://omny.fm/shows/airtalk/airtalk-episode-friday-february-17-2023',
+        'additional_text': ''
+
+    },
+
     {
         'title': 'Jon on ChatGPT for Radio New Zealand.',
         'date': '2/12/2023', //MM/DD/YYYY
