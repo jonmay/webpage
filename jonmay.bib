@@ -1,4 +1,39 @@
 
+@inproceedings{yu-etal-2023-bridging,
+    title = "Bridging the Gap between Native Text and Translated Text through Adversarial Learning: A Case Study on Cross-Lingual Event Extraction",
+    author = "Yu, Pengfei  and
+      May, Jonathan  and
+      Ji, Heng",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-eacl.57",
+    doi = "10.18653/v1/2023.findings-eacl.57",
+    pages = "754--769",
+    abstract = "Recent research in cross-lingual learning has found that combining large-scale pretrained multilingual language models with machine translation can yield good performance. We explore this idea for cross-lingual event extraction with a new model architecture that jointly encodes a source language input sentence with its translation to the target language during training, and takes a target language sentence with its translation back to the source language as input during evaluation. However, we observe significant representational gap between the native source language texts during training and the texts translated into source language during evaluation, as well as the texts translated into target language during training and the native target language texts during evaluation. This representational gap undermines the effectiveness of cross-lingual transfer learning for event extraction with machine-translated data. In order to mitigate this problem, we propose an adversarial training framework that encourages the language model to produce more similar representations for the translated text and the native text. To be specific, we train the language model such that its hidden representations are able to fool a jointly trained discriminator that distinguishes translated texts{'} representations from native texts{'} representations. We conduct experiments on cross-lingual for event extraction across three languages. Results demonstrate that our proposed adversarial training can effectively incorporate machine translation to improve event extraction, while simply adding machine-translated data yields unstable performance due to the representational gap.",
+}
+
+@inproceedings{liu-etal-2023-recap,
+    title = "{RECAP}: Retrieval-Enhanced Context-Aware Prefix Encoder for Personalized Dialogue Response Generation",
+    author = "Liu, Shuai  and
+      Cho, Hyundong  and
+      Freedman, Marjorie  and
+      Ma, Xuezhe  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.468",
+    doi = "10.18653/v1/2023.acl-long.468",
+    pages = "8404--8419",
+    abstract = "Endowing chatbots with a consistent persona is essential to an engaging conversation, yet it remains an unresolved challenge. In this work, we propose a new retrieval-enhanced approach for personalized response generation. Specifically, we design a hierarchical transformer retriever trained on dialogue domain data to perform personalized retrieval and a context-aware prefix encoder that fuses the retrieved information to the decoder more effectively. Extensive experiments on a real-world dataset demonstrate the effectiveness of our model at generating more fluent and personalized responses. We quantitatively evaluate our model{'}s performance under a suite of human and automatic metrics and find it to be superior compared to state-of-the-art baselines on English Reddit conversations.",
+}
+
+
 @inproceedings{cho-etal-2022-know,
     title = "Know Thy Strengths: Comprehensive Dialogue State Tracking Diagnostics",
     author = "Cho, Hyundong  and
@@ -120,30 +155,37 @@
 
 
 
-
-@misc{https://doi.org/10.48550/arxiv.2205.11152,
-  doi = {10.48550/ARXIV.2205.11152},
-  url = {https://arxiv.org/abs/2205.11152},
-  author = {M'hamdi, Meryem and Ren, Xiang and May, Jonathan},
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Cross-lingual Lifelong Learning},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
+@inproceedings{mhamdi-etal-2023-cross,
+    title = "Cross-lingual Continual Learning",
+    author = "M{'}hamdi, Meryem  and
+      Ren, Xiang  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.217",
+    doi = "10.18653/v1/2023.acl-long.217",
+    pages = "3908--3943",
+    abstract = "The longstanding goal of multi-lingual learning has been to develop a universal cross-lingual model that can withstand the changes in multi-lingual data distributions. There has been a large amount of work to adapt such multi-lingual models to unseen target languages. However, the majority of work in this direction focuses on the standard one-hop transfer learning pipeline from source to target languages, whereas in realistic scenarios, new languages can be incorporated at any time in a sequential manner. In this paper, we present a principled Cross-lingual Continual Learning (CCL) evaluation paradigm, where we analyze different categories of approaches used to continually adapt to emerging data from different languages. We provide insights into what makes multilingual sequential learning particularly challenging. To surmount such challenges, we benchmark a representative set of cross-lingual continual learning algorithms and analyze their knowledge preservation, accumulation, and generalization capabilities compared to baselines on carefully curated datastreams. The implications of this analysis include a recipe for how to measure and balance different cross-lingual continual learning desiderata, which go beyond conventional transfer learning.",
 }
 
-
-@misc{https://doi.org/10.48550/arxiv.2205.12453,
-  doi = {10.48550/ARXIV.2205.12453},
-  url = {https://arxiv.org/abs/2205.12453},
-  author = {Gheini, Mozhdeh and Ma, Xuezhe and May, Jonathan},
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Know Where You're Going: Meta-Learning for Parameter-Efficient Fine-tuning},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
+@inproceedings{gheini-etal-2023-know,
+    title = "Know Where You{'}re Going: Meta-Learning for Parameter-Efficient Fine-Tuning",
+    author = "Gheini, Mozhdeh  and
+      Ma, Xuezhe  and
+      May, Jonathan",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.737",
+    doi = "10.18653/v1/2023.findings-acl.737",
+    pages = "11602--11612",
+    abstract = "A recent family of techniques, dubbed lightweight fine-tuning methods, facilitates parameter-efficient transfer by updating only a small set of additional parameters while keeping the parameters of the original model frozen. While proven to be an effective approach, there are no existing studies on if and how such knowledge of the downstream fine-tuning approach calls for complementary measures after pre-training and before fine-tuning. In this work, we show that taking the ultimate choice of fine-tuning into consideration boosts the performance of parameter-efficient fine-tuning. By relying on optimization-based meta-learning using MAML with certain modifications for our distinct purpose, we prime the pre-trained model specifically for parameter-efficient fine-tuning, resulting in gains of up to 4.96 points on cross-lingual NER fine-tuning. Our ablation settings and analyses further reveal that the specific approach we take to meta-learning is crucial for the attained gains.",
 }
-
 
 @inproceedings{bremerman-etal-2022-machine,
     title = "Machine Translation Robustness to Natural Asemantic Variation",
@@ -193,6 +235,24 @@
     pages = "5867--5882",
     abstract = "Free-form rationales aim to aid model interpretability by supplying the background knowledge that can help understand model decisions. Crowdsourced rationales are provided for commonsense QA instances in popular datasets such as CoS-E and ECQA, but their utility remains under-investigated. We present human studies which show that ECQA rationales indeed provide additional background information to understand a decision, while over 88{\%} of CoS-E rationales do not. Inspired by this finding, we ask: can the additional context provided by free-form rationales benefit models, similar to human users? We investigate the utility of rationales as an additional source of supervision, by varying the quantity and quality of rationales during training. After controlling for instances where rationales leak the correct answer while not providing additional background knowledge, we find that incorporating only 5{\%} of rationales during training can boost model performance by 47.22{\%} for CoS-E and 57.14{\%} for ECQA during inference. Moreover, we also show that rationale quality matters: compared to crowdsourced rationales, T5-generated rationales provide not only weaker supervision to models, but are also not helpful for humans in aiding model interpretability.",
 }
+
+@inproceedings{felkner-etal-2023-winoqueer,
+    title = "{W}ino{Q}ueer: A Community-in-the-Loop Benchmark for Anti-{LGBTQ}+ Bias in Large Language Models",
+    author = "Felkner, Virginia  and
+      Chang, Ho-Chun Herbert  and
+      Jang, Eugene  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.507",
+    doi = "10.18653/v1/2023.acl-long.507",
+    pages = "9126--9140",
+    abstract = "We present WinoQueer: a benchmark specifically designed to measure whether large language models (LLMs) encode biases that are harmful to the LGBTQ+ community. The benchmark is community-sourced, via application of a novel method that generates a bias benchmark from a community survey. We apply our benchmark to several popular LLMs and find that off-the-shelf models generally do exhibit considerable anti-queer bias. Finally, we show that LLM bias against a marginalized community can be somewhat mitigated by finetuning on data written about or by members of that community, and that social media text written by community members is more effective than news text written about the community by non-members. Our method for community-in-the-loop benchmark development provides a blueprint for future researchers to develop community-driven, harms-grounded LLM benchmarks for other marginalized communities.",
+}
+
 
 @misc{https://doi.org/10.48550/arxiv.2206.11484,
   doi = {10.48550/ARXIV.2206.11484},
