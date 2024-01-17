@@ -17,13 +17,6 @@ var people_data = [
 				'twitter': ''
 			},
 			{
-				'name': 'Muhao Chen',
-				'title': 'Faculty (CS)',
-				'image_url': 'https://www.isi.edu/wp-content/uploads/headshots/muhao-1.jpg',
-				'website': 'https://muhaochen.github.io/',
-				'twitter': ''
-			},
-			{
 				'name': 'Ulf Hermjakob',
 				'title': 'Senior Computer Scientist',
 				'image_url': 'https://www.isi.edu/wp-content/uploads/headshots/ulf-1.jpg',
@@ -77,14 +70,7 @@ var people_data = [
 				'website': 'https://wzhouad.github.io/',
 				'twitter': 'https://twitter.com/xunannancy'
 			},
-			{
-				'name': 'Meryem M\'hamdi',
-				'title': 'PhD (CS)',
-				'image_url': 'https://www.isi.edu/wp-content/uploads/sites/6/2021/08/meryem-1.jpg',
-				'website': 'https://meryemmhamdi1.github.io/',
-				'twitter': ''
-			},
-
+			
 			  {
 				'name': 'Alex Spangher',
 				'title': 'PhD (CS)',
@@ -174,6 +160,14 @@ var people_data = [
 				'website': 'https://nadaaldarrab.github.io/',
 				'twitter': ''
 			},
+			{
+				'name': 'Meryem M\'hamdi',
+				'title': 'PhD (CS)',
+				'image_url': 'https://www.isi.edu/wp-content/uploads/sites/6/2021/08/meryem-1.jpg',
+				'website': 'https://meryemmhamdi1.github.io/',
+				'twitter': ''
+			},
+
 		]
 	},
 	
