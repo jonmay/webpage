@@ -1,3 +1,136 @@
+@inproceedings{jin-etal-2023-challenges,
+    title = "Challenges in Context-Aware Neural Machine Translation",
+    author = "Jin, Linghao  and
+      He, Jacqueline  and
+      May, Jonathan  and
+      Ma, Xuezhe",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.943",
+    doi = "10.18653/v1/2023.emnlp-main.943",
+    pages = "15246--15263",
+    abstract = "Context-aware neural machine translation, a paradigm that involves leveraging information beyond sentence-level context to resolve inter-sentential discourse dependencies and improve document-level translation quality, has given rise to a number of recent techniques. However, despite well-reasoned intuitions, most context-aware translation models show only modest improvements over sentence-level systems. In this work, we investigate and present several core challenges that impede progress within the field, relating to discourse phenomena, context usage, model architectures, and document-level evaluation. To address these problems, we propose a more realistic setting for document-level translation, called paragraph-to-paragraph (PARA2PARA) translation, and collect a new dataset of Chinese-English novels to promote future research.",
+}
+
+@inproceedings{cho-etal-2023-continual,
+    title = "Continual Dialogue State Tracking via Example-Guided Question Answering",
+    author = "Cho, Hyundong  and
+      Madotto, Andrea  and
+      Lin, Zhaojiang  and
+      Chandu, Khyathi  and
+      Kottur, Satwik  and
+      Xu, Jing  and
+      May, Jonathan  and
+      Sankar, Chinnadhurai",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.235",
+    doi = "10.18653/v1/2023.emnlp-main.235",
+    pages = "3873--3886",
+    abstract = "Dialogue systems are frequently updated to accommodate new services, but naively updating them by continually training with data for new services in diminishing performance on previously learnt services. Motivated by the insight that dialogue state tracking (DST), a crucial component of dialogue systems that estimates the user{'}s goal as a conversation proceeds, is a simple natural language understanding task, we propose reformulating it as a bundle of granular example-guided question answering tasks to minimize the task shift between services and thus benefit continual learning. Our approach alleviates service-specific memorization and teaches a model to contextualize the given question and example to extract the necessary information from the conversation. We find that a model with just 60M parameters can achieve a significant boost by learning to learn from in-context examples retrieved by a retriever trained to identify turns with similar dialogue state changes. Combining our method with dialogue-level memory replay, our approach attains state of the art performance on DST continual learning metrics without relying on any complex regularization or parameter expansion methods.",
+}
+
+@inproceedings{moon-etal-2023-analyzing,
+    title = "Analyzing Norm Violations in Live-Stream Chat",
+    author = "Moon, Jihyung  and
+      Lee, Dong-Ho  and
+      Cho, Hyundong  and
+      Jin, Woojeong  and
+      Park, Chan  and
+      Kim, Minwoo  and
+      May, Jonathan  and
+      Pujara, Jay  and
+      Park, Sungjoon",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.55",
+    doi = "10.18653/v1/2023.emnlp-main.55",
+    pages = "852--868",
+    abstract = "Toxic language, such as hate speech, can deter users from participating in online communities and enjoying popular platforms. Previous approaches to detecting toxic language and norm violations have been primarily concerned with conversations from online forums and social media, such as Reddit and Twitter. These approaches are less effective when applied to conversations on live-streaming platforms, such as Twitch and YouTube Live, as each comment is only visible for a limited time and lacks a thread structure that establishes its relationship with other comments. In this work, we share the first NLP study dedicated to detecting norm violations in conversations on live-streaming platforms. We define norm violation categories in live-stream chats and annotate 4,583 moderated comments from Twitch. We articulate several facets of live-stream data that differ from other forums, and demonstrate that existing models perform poorly in this setting. By conducting a user study, we identify the informational context humans use in live-stream moderation, and train models leveraging context to identify norm violations. Our results show that appropriate contextual information can boost moderation performance by 35{\%}.",
+}
+
+@inproceedings{spangher-etal-2023-identifying,
+    title = "Identifying Informational Sources in News Articles",
+    author = "Spangher, Alexander  and
+      Peng, Nanyun  and
+      Ferrara, Emilio  and
+      May, Jonathan",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.221",
+    doi = "10.18653/v1/2023.emnlp-main.221",
+    pages = "3626--3639",
+    abstract = "News articles are driven by the informational sources journalists use in reporting. Modeling when, how and why sources get used together in stories can help us better understand the information we consume and even help journalists with the task of producing it. In this work, we take steps toward this goal by constructing the largest and widest-ranging annotated dataset, to date, of informational sources used in news writing. We first show that our dataset can be used to train high-performing models for information detection and source attribution. Then, we introduce a novel task, source prediction, to study the compositionality of sources in news articles {--} i.e. how they are chosen to complement each other. We show good modeling performance on this task, indicating that there is a pattern to the way different sources are used \textit{together} in news storytelling. This insight opens the door for a focus on sources in narrative science (i.e. planning-based language generation) and computational journalism (i.e. a source-recommendation system to aid journalists writing stories). All data and model code can be found at https://github.com/alex2awesome/source-exploration.",
+}
+
+@inproceedings{10.1007/978-3-031-43129-6_9,
+author = {Chang, Rong-Ching and May, Jonathan and Lerman, Kristina},
+title = {Feedback Loops and&nbsp;Complex Dynamics of&nbsp;Harmful Speech in&nbsp;Online Discussions},
+year = {2023},
+isbn = {978-3-031-43128-9},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-031-43129-6_9},
+doi = {10.1007/978-3-031-43129-6_9},
+abstract = {Harmful and toxic speech contribute to an unwelcoming online environment that suppresses participation and conversation. Efforts have focused on detecting and mitigating harmful speech; however, the mechanisms by which toxicity degrades online discussions are not well understood. This paper makes two contributions. First, to comprehensively model harmful comments, we introduce a multilingual misogyny and sexist speech detection model (). Second, we model the complex dynamics of online discussions as feedback loops in which harmful comments lead to negative emotions which prompt even more harmful comments. To quantify the feedback loops, we use a combination of mutual Granger causality and regression to analyze discussions on two political forums on Reddit: the moderated political forum r/Politics and the moderated neutral political forum r/NeutralPolitics. Our results suggest that harmful comments and negative emotions create self-reinforcing feedback loops in forums. Contrarily, moderation with neutral discussion appears to tip interactions into self-extinguishing feedback loops that reduce harmful speech and negative emotions. Our study sheds more light on the complex dynamics of harmful speech and the role of moderation and neutral discussion in mitigating these dynamics.},
+booktitle = {Social, Cultural, and Behavioral Modeling: 16th International Conference, SBP-BRiMS 2023, Pittsburgh, PA, USA, September 20–22, 2023, Proceedings},
+pages = {85–94},
+numpages = {10},
+keywords = {Feedback Loop, Moderation, Granger Causality},
+location = {Pittsburgh, PA, USA}
+}
+
+@Proceedings{spangher23.djc,
+  title =        {First Steps Towards a Source Recommendation Engine:
+Investigating How Sources Are Used in News Articles},
+  year =         2023,
+  url={https://www.datajconf.com/papers/CJ_DataJConf_2023_paper_74.pdf},
+  booktitle = {Proc. The Joint Computation + Journalism European Data \& Computational Journalism Conference},
+  address =   {Zurich, Switzerland},
+  month =     {June}}
+
+@inproceedings{10.1145/3543873.3587629,
+author = {Bonab, Hamed and Joshi, Ashutosh and Bhatia, Ravi and Gandhi, Ankit and Huddar, Vijay and Naik, Juhi and Al-Darabsah, Mutasem and Teo, Choon Hui and May, Jonathan and Agarwal, Tarun and Petricek, Vaclav},
+title = {Blend and Match: Distilling Semantic Search Models with Different Inductive Biases and Model Architectures},
+year = {2023},
+isbn = {9781450394192},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3543873.3587629},
+doi = {10.1145/3543873.3587629},
+abstract = {Commercial search engines use different semantic models to augment lexical matches. These models provide candidate items for a user’s query from a target space of millions to billions of items. Models with different inductive biases provide relatively different predictions, making it desirable to launch multiple semantic models in production. However, latency and resource constraints make simultaneously deploying multiple models impractical. In this paper, we introduce a distillation approach, called Blend and Match (BM), to unify two different semantic search models into a single model. We use a Bi-encoder semantic matching model as our primary model and propose a novel loss function to incorporate eXtreme Multi-label Classification (XMC) predictions as the secondary model. Our experiments conducted on two large-scale datasets, collected from a popular e-commerce store, show that our proposed approach significantly improves the recall of the primary Bi-encoder model by 11\% to 17\% with a minimal loss in precision. We show that traditional knowledge distillation approaches result in a sub-optimal performance for our problem setting, and our BM approach yields comparable rankings with strong Rank Fusion (RF) methods used only if one could deploy multiple models.},
+booktitle = {Companion Proceedings of the ACM Web Conference 2023},
+pages = {869–877},
+numpages = {9},
+keywords = {Semantic Search, Ranking Distillation, Product Search, Model Blending},
+location = {Austin, TX, USA},
+series = {WWW '23 Companion}
+}
+
 
 @inproceedings{yu-etal-2023-bridging,
     title = "Bridging the Gap between Native Text and Translated Text through Adversarial Learning: A Case Study on Cross-Lingual Event Extraction",
@@ -54,15 +187,21 @@
     abstract = "Recent works that revealed the vulnerability of dialogue state tracking (DST) models to distributional shifts have made holistic comparisons on robustness and qualitative analyses increasingly important for understanding their relative performance. We present our findings from standardized and comprehensive DST diagnoses, which have previously been sparse and uncoordinated, using our toolkit, CheckDST, a collection of robustness tests and failure mode analytics. We discover that different classes of DST models have clear strengths and weaknesses, where generation models are more promising for handling language variety while span-based classification models are more robust to unseen entities. Prompted by this discovery, we also compare checkpoints from the same model and find that the standard practice of selecting checkpoints using validation loss/accuracy is prone to overfitting and each model class has distinct patterns of failure. Lastly, we demonstrate how our diagnoses motivate a pre-finetuning procedure with non-dialogue data that offers comprehensive improvements to generation models by alleviating the impact of distributional shifts through transfer learning.",
 }
 
-@misc{https://doi.org/10.48550/arxiv.2212.00339,
-  doi = {10.48550/ARXIV.2212.00339},
-  url = {https://arxiv.org/abs/2212.00339},
-  author = {Chen, Kai and He, Zihao and Chang, Rong-Ching and May, Jonathan and Lerman, Kristina},
-  keywords = {Computation and Language (cs.CL), Computers and Society (cs.CY), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Anger Breeds Controversy: Analyzing Controversy and Emotions on Reddit},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
+
+@InProceedings{10.1007/978-3-031-43129-6_5,
+author="Chen, Kai and He, Zihao and Chang, Rong-Ching and May, Jonathan and Lerman, Kristina",
+editor="Thomson, Robert and Al-khateeb, Samer and Burger, Annetta
+and Park, Patrick
+and A. Pyke, Aryn",
+title="Anger Breeds Controversy: Analyzing Controversy and¬†Emotions on¬†Reddit",
+booktitle="Social, Cultural, and Behavioral Modeling",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="44--53",
+url = {https://arxiv.org/abs/2212.00339},
+abstract="Emotions play an important role in interpersonal interactions and social conflict, yet their function in the development of controversy and disagreement in online conversations has not been fully explored. To address this gap, we study controversy on Reddit, a popular network of online discussion forums. We collect discussions from various topical forums and use emotion detection to recognize a range of emotions from text, including anger, fear, joy, admiration, etc. (Code and dataset are publicly available at https://github.com/ChenK7166/controversy-emotion). We find controversial comments express more anger and less admiration, joy, and optimism than non-controversial comments. Moreover, controversial comments affect emotions of downstream comments, resulting in a long-term increase in anger and a decrease in positive emotions. The magnitude and direction of emotional change differ by forum. Finally, we show that emotions help better predict which comments will become controversial. Understanding the dynamics of emotions in online discussions can help communities to manage conversations better.",
+isbn="978-3-031-43129-6"
 }
 
 
