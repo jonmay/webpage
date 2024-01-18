@@ -21,7 +21,15 @@ var news_data = [
         'website_url': '',
         'additional_text': ''
         },
+    {
+        'title': 'Jon interviewed on Voice of America.',
+        'date': '3/20/2023', //MM/DD/YYYY
+        'website_text': 'Artificial Intelligence Can Create, But Lacks Creativity, Say Critics',
+        'website_url': 'https://www.voanews.com/a/artificial-intelligence-can-create-but-lacks-creativity-say-critics/7068177.html',
+        'additional_text': ''
 
+    },
+    
     {
         'title': 'Jon on GPT-4 for Scientific American.',
         'date': '3/16/2023', //MM/DD/YYYY
