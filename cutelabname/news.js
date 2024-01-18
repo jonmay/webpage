@@ -14,6 +14,14 @@
 
 var news_data = [
 
+        {
+        'title': 'Congratulations to Meryem M\'Hamdi on passing her dissertation defense. Meryem is the fourth PhD recipient from CUTELABNAME. She will join Microsoft.',
+        'date': '1/17/2024', //MM/DD/YYYY
+        'website_text': '',
+        'website_url': '',
+        'additional_text': ''
+        },
+
     {
         'title': 'Jon on GPT-4 for Scientific American.',
         'date': '3/16/2023', //MM/DD/YYYY
