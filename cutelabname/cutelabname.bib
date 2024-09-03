@@ -1,4 +1,152 @@
 
+@inproceedings{10.1145/3626772.3657812,
+author = {M'hamdi, Meryem and May, Jonathan and Dernoncourt, Franck and Bui, Trung and Yoon, Seunghyun},
+title = {Multilingual Meta-Distillation Alignment for Semantic Retrieval},
+year = {2024},
+isbn = {9798400704314},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3626772.3657812},
+doi = {10.1145/3626772.3657812},
+abstract = {Multilingual semantic retrieval involves retrieving semantically relevant content to a query irrespective of the language. Compared to monolingual and bilingual semantic retrieval, multilingual semantic retrieval requires a stronger alignment approach to pull the contents to be retrieved close to the representation of their corresponding queries, no matter their language combinations. Traditionally, this is achieved through more supervision in the form of multilingual parallel resources, which are expensive to obtain, especially for low-resource languages. In this work, on top of an optimization-based Model-Agnostic Meta-Learner (MAML), we propose a data-efficient meta-distillation approach: MAML-Align,1 specifically for low-resource multilingual semantic retrieval. Our approach simulates a gradual feedback loop from monolingual to bilingual and from bilingual to multilingual semantic retrieval. We systematically compare multilingual meta-distillation learning to different baselines and conduct ablation studies on the role of different sampling approaches in the meta-task construction. We show that MAML-Align's gradual feedback loop boosts the generalization to different languages, including zero-shot ones, better than naive fine-tuning and vanilla MAML.},
+booktitle = {Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {597–607},
+numpages = {11},
+keywords = {knowledge distillation, maml, meta-distillation, meta-learning, multilingual representations, semantic retrieval},
+location = {Washington DC, USA},
+series = {SIGIR '24}
+}
+
+@article{He_May_Lerman_2024, title={CPL-NoViD: Context-Aware Prompt-Based Learning for Norm Violation Detection in Online Communities}, volume={18}, url={https://ojs.aaai.org/index.php/ICWSM/article/view/31335}, DOI={10.1609/icwsm.v18i1.31335}, abstractNote={Detecting norm violations in online communities is critical to maintaining healthy and safe spaces for online discussions. Existing machine learning approaches often struggle to adapt to the diverse rules and interpretations across different communities due to the inherent challenges of fine-tuning models for such context-specific tasks. In this paper, we introduce Context-aware Prompt-based Learning for Norm Violation Detection (CPL-NoViD), a novel method that employs prompt-based learning to detect norm violations across various types of rules. CPL-NoViD outperforms the baseline by incorporating context through natural language prompts and demonstrates improved performance across different rule types. Significantly, it not only excels in cross-rule-type and cross-community norm violation detection but also exhibits adaptability in few-shot learning scenarios. Most notably, it establishes a new state-of-the-art in norm violation detection, surpassing existing benchmarks. Our work highlights the potential of prompt-based learning for context-sensitive norm violation detection and paves the way for future research on more adaptable, context-aware models to better support online community moderators.}, number={1}, journal={Proceedings of the International AAAI Conference on Web and Social Media}, author={He, Zihao and May, Jonathan and Lerman, Kristina}, year={2024}, month={May}, pages={569-582} }
+
+@inproceedings{spangher-etal-2024-tracking,
+    title = "Tracking the Newsworthiness of Public Documents",
+    author = "Spangher, Alexander  and
+      Tumgoren, Serdar  and
+      Welsh, Ben  and
+      Peng, Nanyun  and
+      Ferrara, Emilio  and
+      May, Jonathan",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.763",
+    pages = "14150--14168",
+    abstract = "Journalists regularly make decisions on whether or not to report stories, based on {``}news values{''}. In this work, we wish to explicitly model these decisions to explore {\_}when{\_} and {\_}why{\_} certain stories get press attention. This is challenging because very few labelled links between source documents and news articles exist and language use between corpora is very different. We address this problem by implementing a novel {\_}probabilistic relational modeling{\_} framework, which we show is a low-annotation linking methodology that outperforms other, more state-of-the-art retrieval-based baselines. Next, we define a new task: {\_}{\_}newsworthiness prediction{\_}{\_}, to predict if a policy item will get covered. We focus on news coverage of local public policy in the San Francisco Bay Area by the {\_}San Francisco Chronicle{\_}. We gather 15k policies discussed across 10 years of public policy meetings, and transcribe over 3,200 hours of public discussion. In general, we find limited impact of public discussion on newsworthiness prediction accuracy, suggesting that some of the most important stories barely get discussed in public.Finally, we show that newsworthiness predictions can be a useful assistive tool for journalists seeking to keep abreast of local government. We perform human evaluation with expert journalists and show our systems identify policies they consider newsworthy with 68{\%} F1 and our coverage recommendations are helpful with an 84{\%} win-rate against baseline. We release all code and data to our work here: https://github.com/alex2awesome/newsworthiness-public.",
+}
+
+@inproceedings{felkner-etal-2024-gpt,
+    title = "{GPT} is Not an Annotator: The Necessity of Human Annotation in Fairness Benchmark Construction",
+    author = "Felkner, Virginia  and
+      Thompson, Jennifer  and
+      May, Jonathan",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.760",
+    pages = "14104--14115",
+    abstract = "Social biases in LLMs are usually measured via bias benchmark datasets. Current benchmarks have limitations in scope, grounding, quality, and human effort required. Previous work has shown success with a community-sourced, rather than crowd-sourced, approach to benchmark development. However, this work still required considerable effort from annotators with relevant lived experience. This paper explores whether an LLM (specifically, GPT-3.5-Turbo) can assist with the task of developing a bias benchmark dataset from responses to an open-ended community survey. We also extend the previous work to a new community and set of biases: the Jewish community and antisemitism. Our analysis shows that GPT-3.5-Turbo has poor performance on this annotation task and produces unacceptable quality issues in its output. Thus, we conclude that GPT-3.5-Turbo is not an appropriate substitute for human annotation in sensitive tasks related to social biases, and that its use actually negates many of the benefits of community-sourcing bias benchmarks.",
+}
+
+@inproceedings{wongkamjan-etal-2024-victories,
+    title = "More Victories, Less Cooperation: Assessing Cicero{'}s Diplomacy Play",
+    author = "Wongkamjan, Wichayaporn  and
+      Gu, Feng  and
+      Wang, Yanze  and
+      Hermjakob, Ulf  and
+      May, Jonathan  and
+      Stewart, Brandon  and
+      Kummerfeld, Jonathan  and
+      Peskoff, Denis  and
+      Boyd-Graber, Jordan",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.672",
+    pages = "12423--12441",
+    abstract = "The boardgame Diplomacy is a challenging setting for communicative and cooperative artificial intelligence. The most prominent communicative Diplomacy AI, Cicero, has excellent strategic abilities, exceeding human players. However, the best Diplomacy players master communication, not just tactics, which is why the game has received attention as an AI challenge. This work seeks to understand the degree to which Cicero succeeds at communication. First, we annotate in-game communication with abstract meaning representation to separate in-game tactics from general language. Second, we run two dozen games with humans and Cicero, totaling over 200 human-player hours of competition. While AI can consistently outplay human players, AI-Human communication is still limited because of AI{'}s difficulty with deception and persuasion. This shows that Cicero relies on strategy and has not yet reached the full promise of communicative and cooperative AI.",
+}
+
+@inproceedings{spangher-etal-2024-legaldiscourse,
+    title = "{L}egal{D}iscourse: Interpreting When Laws Apply and To Whom",
+    author = "Spangher, Alexander  and
+      Xue, Zihan  and
+      Wu, Te-Lin  and
+      Hansen, Mark  and
+      May, Jonathan",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.472",
+    doi = "10.18653/v1/2024.naacl-long.472",
+    pages = "8536--8559",
+    abstract = "While legal AI has made strides in recent years, it still struggles with basic legal concepts: {\_}when{\_} does a law apply? {\_}Who{\_} does it applies to? {\_}What{\_} does it do? We take a {\_}discourse{\_} approach to addressing these problems and introduce a novel taxonomy for span-and-relation parsing of legal texts. We create a dataset, {\_}LegalDiscourse{\_} of 602 state-level law paragraphs consisting of 3,715 discourse spans and 1,671 relations. Our trained annotators have an agreement-rate $\kappa>.8$, yet few-shot GPT3.5 performs poorly at span identification and relation classification. Although fine-tuning improves performance, GPT3.5 still lags far below human level. We demonstrate the usefulness of our schema by creating a web application with journalists. We collect over 100,000 laws for 52 U.S. states and territories using 20 scrapers we built, and apply our trained models to 6,000 laws using U.S. Census population numbers. We describe two journalistic outputs stemming from this application: (1) an investigation into the increase in liquor licenses following population growth and (2) a decrease in applicable laws under different under-count projections.",
+}
+
+@inproceedings{mhamdi-may-2024-leitner,
+    title = "Leitner-Guided Memory Replay for Cross-lingual Continual Learning",
+    author = "M{'}hamdi, Meryem  and
+      May, Jonathan",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.432",
+    doi = "10.18653/v1/2024.naacl-long.432",
+    pages = "7808--7821",
+    abstract = "Cross-lingual continual learning aims to continuously fine-tune a downstream model on emerging data from new languages. One major challenge in cross-lingual continual learning is catastrophic forgetting: a stability-plasticity dilemma, where performance on previously seen languages decreases as the model learns to transfer to new languages. Experience replay, which revisits data from a fixed-size memory of old languages while training on new ones, is among the most successful approaches for solving this dilemma. Faced with the challenge of dynamically storing the memory with high-quality examples while complying with its fixed size limitations, we consider Leitner queuing, a human-inspired spaced-repetition technique, to determine what should be replayed at each phase of learning. Via a controlled set of quantitative and qualitative analyses across different memory strategies, we show that, just like humans, carefully picking informative examples to be prioritized in cross-lingual memory replay helps tame the stability-plasticity dilemma. Compared to vanilla and strong memory replay baselines, our Leitner-guided approach significantly and consistently decreases forgetting while maintaining accuracy across natural language understanding tasks, language orders, and languages.",
+}
+
+@inproceedings{cho-etal-2024-language,
+    title = "Can Language Model Moderators Improve the Health of Online Discourse?",
+    author = "Cho, Hyundong  and
+      Liu, Shuai  and
+      Shi, Taiwei  and
+      Jain, Darpan  and
+      Rizk, Basem  and
+      Huang, Yuyang  and
+      Lu, Zixun  and
+      Wen, Nuan  and
+      Gratch, Jonathan  and
+      Ferrara, Emilio  and
+      May, Jonathan",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.415",
+    doi = "10.18653/v1/2024.naacl-long.415",
+    pages = "7478--7496",
+    abstract = "Conversational moderation of online communities is crucial to maintaining civility for a constructive environment, but it is challenging to scale and harmful to moderators. The inclusion of sophisticated natural language generation modules as a force multiplier to aid human moderators is a tantalizing prospect, but adequate evaluation approaches have so far been elusive. In this paper, we establish a systematic definition of conversational moderation effectiveness grounded on moderation literature and establish design criteria for conducting realistic yet safe evaluation. We then propose a comprehensive evaluation framework to assess models{'} moderation capabilities independently of human intervention. With our framework, we conduct the first known study of language models as conversational moderators, finding that appropriately prompted models that incorporate insights from social science can provide specific and fair feedback on toxic behavior but struggle to influence users to increase their levels of respect and cooperation.",
+}
 
 @inproceedings{jin-etal-2023-challenges,
     title = "Challenges in Context-Aware Neural Machine Translation",
