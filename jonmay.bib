@@ -1,4 +1,96 @@
 
+
+
+@InProceedings{he-etal-2025-token,
+  author =       {Shanxiu He and Mutasem Al-Darabsah and Suraj Nair and Jonathan May and Tarun Agarwal and Tao Yang and Choon Hui Teo},
+  title =        {Token Pruning Optimization for Efficient Dense Retrieval with Multi-Vector Representations},
+  booktitle = {Proc. ECIR},
+  year =      2025,
+  month =     {April},
+  address =   {Lucca, Italy}}
+
+@misc{ma2024megalodonefficientllmpretraining,
+      title={Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length}, 
+      author={Xuezhe Ma and Xiaomeng Yang and Wenhan Xiong and Beidi Chen and Lili Yu and Hao Zhang and Jonathan May and Luke Zettlemoyer and Omer Levy and Chunting Zhou},
+      year={2024},
+      eprint={2404.08801},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2404.08801}, 
+}
+
+
+@inproceedings{cho-etal-2024-speechworthy,
+    title = "Speechworthy Instruction-tuned Language Models",
+    author = "Cho, Hyundong Justin  and
+      Jedema, Nicolaas Paul  and
+      Ribeiro, Leonardo F. R.  and
+      Sharma, Karishma  and
+      Szekely, Pedro  and
+      Moschitti, Alessandro  and
+      Janssen, Ruben  and
+      May, Jonathan",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.595",
+    doi = "10.18653/v1/2024.emnlp-main.595",
+    pages = "10652--10670",
+    abstract = "Current instruction-tuned language models are exclusively trained with textual preference data and thus may not be aligned to the unique requirements of other modalities, such as speech. To better align language models with the speech domain, we explore i) prompting strategies based on radio-industry best practices and ii) preference learning using a novel speech-based preference data of 20K samples collected by annotators who listen to response pairs. Both human and automatic evaluation show that both prompting and preference learning increase the speech-suitability of popular instruction tuned LLMs. More interestingly, we show that these methods are additive; combining them achieves the best win rates in head-to-head comparison, resulting in responses that are preferred or tied to the base model in 76.2{\%} of comparisons on average. Lastly, we share lexical, syntactical, and qualitative analyses that elicit how our studied methods differ with baselines in generating more speech-suitable responses.",
+}
+
+
+@inproceedings{tian-etal-2024-large-language,
+    title = "Are Large Language Models Capable of Generating Human-Level Narratives?",
+    author = "Tian, Yufei  and
+      Huang, Tenghao  and
+      Liu, Miri  and
+      Jiang, Derek  and
+      Spangher, Alexander  and
+      Chen, Muhao  and
+      May, Jonathan  and
+      Peng, Nanyun",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.978",
+    doi = "10.18653/v1/2024.emnlp-main.978",
+    pages = "17659--17681",
+    abstract = "As daily reliance on large language models (LLMs) grows, assessing their generation quality is crucial to understanding how they might impact on our communications. This paper investigates the capability of LLMs in storytelling, focusing on narrative development and plot progression. We introduce a novel computational framework to analyze narratives through three discourse-level aspects: i) story arcs, ii) turning points, and iii) affective dimensions, including arousal and valence. By leveraging expert and automatic annotations, we uncover significant discrepancies between the LLM- and human- written stories. While human-written stories are suspenseful, arousing, and diverse in narrative structures, LLM stories are homogeneously positive and lack tension. Next, we measure narrative reasoning skills as a precursor to generative capacities, concluding that most LLMs fall short of human abilities in discourse understanding. Finally, we show that explicit integration of aforementioned discourse features can enhance storytelling, as is demonstrated by over 40{\%} improvement in neural storytelling in terms of diversity, suspense, and arousal. Such advances promise to facilitate greater and more natural roles LLMs in human communication.",
+}
+
+@inproceedings{spangher-etal-2024-explaining,
+    title = "Explaining Mixtures of Sources in News Articles",
+    author = "Spangher, Alexander  and
+      Youn, James  and
+      DeButts, Matt  and
+      Peng, Nanyun  and
+      Ferrara, Emilio  and
+      May, Jonathan",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.930",
+    doi = "10.18653/v1/2024.findings-emnlp.930",
+    pages = "15837--15859",
+    abstract = "Human writers plan, {\_}then{\_} write. For large language models (LLMs) to play a role in longer-form article generation, we must understand the planning steps humans make before writing. We explore one kind of planning, source-selection in news, as a case-study for evaluating plans in long-form generation. We ask: why do {\_}specific{\_} stories call for {\_}specific{\_} kinds of sources? We imagine a generative process for story writing where a source-selection schema is first selected by a journalist, and then sources are chosen based on categories in that schema. Learning the article{'}s {\_}plan{\_} means predicting the schema initially chosen by the journalist. Working with professional journalists, we adapt five existing schemata and introduce three new ones to describe journalistic plans for the inclusion of sources in documents. Then, inspired by Bayesian latent-variable modeling, we develop metrics to select the most likely plan, or schema, underlying a story, which we use to compare schemata. We find that two schemata: {\_}stance{\_} and {\_}social affiliation{\_} best explain source plans in most documents. However, other schemata like {\_}textual entailment{\_} explain source plans in factually rich topics like {``}Science{''}. Finally, we find we can predict the most suitable schema given just the article{'}s headline with reasonable accuracy. We see this as an important case-study for human planning, and provides a framework and approach for evaluating other kinds of plans, like discourse or plot-oriented plans. We release a corpora, {\_}NewsSources{\_}, with annotations for 4M articles, for further study.",
+}
+
 @inproceedings{10.1145/3626772.3657812,
 author = {M'hamdi, Meryem and May, Jonathan and Dernoncourt, Franck and Bui, Trung and Yoon, Seunghyun},
 title = {Multilingual Meta-Distillation Alignment for Semantic Retrieval},
@@ -39,6 +131,29 @@ series = {SIGIR '24}
     url = "https://aclanthology.org/2024.acl-long.763",
     pages = "14150--14168",
     abstract = "Journalists regularly make decisions on whether or not to report stories, based on {``}news values{''}. In this work, we wish to explicitly model these decisions to explore {\_}when{\_} and {\_}why{\_} certain stories get press attention. This is challenging because very few labelled links between source documents and news articles exist and language use between corpora is very different. We address this problem by implementing a novel {\_}probabilistic relational modeling{\_} framework, which we show is a low-annotation linking methodology that outperforms other, more state-of-the-art retrieval-based baselines. Next, we define a new task: {\_}{\_}newsworthiness prediction{\_}{\_}, to predict if a policy item will get covered. We focus on news coverage of local public policy in the San Francisco Bay Area by the {\_}San Francisco Chronicle{\_}. We gather 15k policies discussed across 10 years of public policy meetings, and transcribe over 3,200 hours of public discussion. In general, we find limited impact of public discussion on newsworthiness prediction accuracy, suggesting that some of the most important stories barely get discussed in public.Finally, we show that newsworthiness predictions can be a useful assistive tool for journalists seeking to keep abreast of local government. We perform human evaluation with expert journalists and show our systems identify policies they consider newsworthy with 68{\%} F1 and our coverage recommendations are helpful with an 84{\%} win-rate against baseline. We release all code and data to our work here: https://github.com/alex2awesome/newsworthiness-public.",
+}
+
+
+@inproceedings{cho-etal-2024-boteval,
+    title = "{B}ot{E}val: Facilitating Interactive Human Evaluation",
+    author = "Cho, Hyundong  and
+      Gowda, Thamme  and
+      Huang, Yuyang  and
+      Lu, Zixun  and
+      Tong, Tianli  and
+      May, Jonathan",
+    editor = "Cao, Yixin  and
+      Feng, Yang  and
+      Xiong, Deyi",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-demos.11/",
+    doi = "10.18653/v1/2024.acl-demos.11",
+    pages = "107--116",
+    abstract = "Following the rapid progress in natural language processing (NLP) models, language models are applied to increasingly more complex interactive tasks such as negotiations and conversation moderations. Having human evaluators directly interact with these NLP models is essential for adequately evaluating the performance on such interactive tasks. We develop BotEval, an easily customizable, open-source, evaluation toolkit that focuses on enabling human-bot interactions as part of the evaluation process, as opposed to human evaluators making judgements for a static input. BotEval balances flexibility for customization and user-friendliness by providing templates for common use cases that span various degrees of complexity and built-in compatibility with popular crowdsourcing platforms.We showcase the numerous useful features of BotEval through a study that evaluates the performance of various chatbots on their effectiveness for conversational moderation and discuss how BotEval differs from other annotation tools."
 }
 
 @inproceedings{felkner-etal-2024-gpt,
@@ -82,6 +197,17 @@ series = {SIGIR '24}
     pages = "12423--12441",
     abstract = "The boardgame Diplomacy is a challenging setting for communicative and cooperative artificial intelligence. The most prominent communicative Diplomacy AI, Cicero, has excellent strategic abilities, exceeding human players. However, the best Diplomacy players master communication, not just tactics, which is why the game has received attention as an AI challenge. This work seeks to understand the degree to which Cicero succeeds at communication. First, we annotate in-game communication with abstract meaning representation to separate in-game tactics from general language. Second, we run two dozen games with humans and Cicero, totaling over 200 human-player hours of competition. While AI can consistently outplay human players, AI-Human communication is still limited because of AI{'}s difficulty with deception and persuasion. This shows that Cicero relies on strategy and has not yet reached the full promise of communicative and cooperative AI.",
 }
+
+
+
+
+@Article{may-etal-2024-antisemitism,
+  author =       {Jonathan May and Virginia K. Felkner and Jennifer Thompson},
+  title =        {We Can Have {AI} without Antisemitism---If We Want It},
+  journal =      {AJS Perspectives},
+  year =         2024,
+  pages =     {36--38},
+  month =     {Summer}}
 
 @inproceedings{spangher-etal-2024-legaldiscourse,
     title = "{L}egal{D}iscourse: Interpreting When Laws Apply and To Whom",
@@ -255,7 +381,8 @@ keywords = {Feedback Loop, Moderation, Granger Causality},
 location = {Pittsburgh, PA, USA}
 }
 
-@Proceedings{spangher23.djc,
+@inproceedings{spangher23.djc,
+  author = {Alexander Spangher and James Youn and Jonathan May and Nanyun Peng},
   title =        {First Steps Towards a Source Recommendation Engine:
 Investigating How Sources Are Used in News Articles},
   year =         2023,
@@ -518,7 +645,7 @@ isbn="978-3-031-43129-6"
 }
 
 
-
+@inproceedings{sun-etal-2022-investigating,
     title = "Investigating the Benefits of Free-Form Rationales",
     author = "Sun, Jiao  and
       Swayamdipta, Swabha  and
@@ -1554,7 +1681,20 @@ Association for Machine Translation in the Americas},
   publisher = {Association for Machine Translation in the Americas},
 }
 
-% missing: "Identifying Useful Human Correction Feedback from an On-line Machine Translation Service", (A. Barrón-Cedeño, L. Màrquez, L., C. Henríquez Q., L. Formiga, E. Romero, & J. May), Proc. IJCAI, 2013.
+@inproceedings{10.5555/2540128.2540424,
+author = {Barr\'{o}n-Cede\~{n}o, Alberto and M\`{a}rquez, Llu\'{\i}s and Henr\'{\i}quez, Q. Carlos A. and Formiga, Llu\'{\i}s and Romero, Enrique and May, Jonathan},
+title = {Identifying useful human correction feedback from an on-line machine translation service},
+year = {2013},
+isbn = {9781577356332},
+publisher = {AAAI Press},
+abstract = {Post-editing feedback provided by users of on-line translation services offers an excellent opportunity for automatic improvement of statistical machine translation (SMT) systems. However, feedback provided by casual users is very noisy, and must be automatically filtered in order to identify the potentially useful cases. We present a study on automatic feedback filtering in a real weblog collected from Reverso.net. We extend and re-annotate a training corpus, define an extended set of simple features and approach the problem as a binary classification task, experimenting with linear and kernel-based classifiers and feature selection. Results on the feedback filtering task show a significant improvement over the majority class, but also a precision ceiling around 70-80\%. This reflects the inherent difficulty of the problem and indicates that shallow features cannot fully capture the semantic nature of the problem. Despite the modest results on the filtering task, the classifiers are proven effective in an application-based evaluation. The incorporation of a filtered set of feedback instances selected from a larger corpus significantly improves the performance of a phrase-based SMT system, according to a set of standard evaluation metrics.},
+booktitle = {Proceedings of the Twenty-Third International Joint Conference on Artificial Intelligence},
+pages = {2057–2063},
+numpages = {7},
+location = {Beijing, China},
+series = {IJCAI '13}
+}
+
 
 @InProceedings{hopkins-may:2013:ACL2013,
   author    = {Hopkins, Mark  and  May, Jonathan},
