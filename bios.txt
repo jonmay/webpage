@@ -1,10 +1,21 @@
 
 
+rec letter footer as of 1/25
+
+I am a research associate professor at the University of Southern California Information Sciences Institute. I received my PhD from USC/ISI in 2010 and re-joined as a research scientist in 2014 and a research assistant professor in 2016. I have more than 100 publications, which have been cited more than 6000 times, as well as four patents. My papers have won Outstanding Paper awards in 2018, 2022,  and 2024, and a Best Demo Paper award in 2018. I'm currently a PI and co-PI on DARPA-, IARPA-, and ARPA-H- funded projects. I am the director of the Center for Useful Techniques Enhancing Language Applications Based on Natural And Meaningful Evidence, which comprises PhD and MS students, research programmers, and computer scientists. I am also an Amazon Scholar.
+
+
+11/24 SBIR LRMT Phase 2 proposal
+
+Dr. Jonathan May is a Research Associate Professor at USC and Research Team Leader at ISI, where he directs the Center for Useful Techniques Enhancing Language Applications Based on Natural And Meaningful Evidence. He is currently PI of ISI's efforts on DARPA Civil Sanctuary (building empathetic chatbots to curb online toxicity) and DARPA SHADE (teaching agents to collaborate and compete in strategic gameplay) as well as co-PI for ISI's efforts in DARPA’s KMASS and INCAS programs. He was previously involved in multiple leadership positions in ISI’s efforts centered around translation and multilingualism: PI of DARPA LORELEI, Co-PI of IARPA MATERIAL, and Co-PI of DARPA LwLL. He has written and spoken about large language models extensively in the public sphere. May is an expert in architecture development for natural language processing, human-machine natural language interaction, computational journalism, machine translation, multilinguality, and transfer learning, with an extensive publication record that includes two outstanding paper awards and one best demo award. He has organized multiple NLP workshops and conferences at various service levels and currently is Treasurer of NAACL and Associate Treasurer of ACL.
+
 
 4/18/24 AI in cinema
+
 Dr. Jonathan May is a Research Associate Professor at USC and Principal Scientist at the Information Sciences Institute (ISI), where he directs the Center for Useful Techniques Enhancing Language Applications Based on Natural And Meaningful Evidence. Jon's current research efforts include building empathetic chatbots to curb online toxicity, teaching agents to collaborate and compete in strategic gameplay, and identifying and mitigating bias in AI models. He has written and spoken about large language models extensively in the public sphere. Jon is an expert in architecture development for natural language processing, human-machine natural language interaction, computational journalism, machine translation, multilinguality, and transfer learning, with an extensive publication record that includes two outstanding paper awards and one best demo award. He is also an Amazon Scholar.
 
 2/24 BENGAL proposal
+
 \textbf{Dr. Jonathan May} (Principal Scientist and Research Associate Professor at USC/ISI; 35\% LoE) will serve as PI, coordinating the activities of the team, and leading Task 4 (\taskfour). He will serve as the POC with IARPA and will have overall responsibility for program management and technical direction; he will also supervise the work of two graduate students, contributing to Task 1. Dr. May has extensive experience in machine translation, multilinguality, information extraction, and dialogue generation research. %, including foundational experience in cross-lingual and cross-task transfer learning models. 
 His team has won publication awards at NAACL (2018, 2022) and ACL (2018). He has led multiple government projects such as DARPA Civil Sanctuary (PI), DARPA SHADE (Co-PI), DARPA LORELEI (PI), IARPA MATERIAL (Co-PI), DARPA LwLL (Co-PI), and DARPA KAIROS (Co-PI). 
 
@@ -13,15 +24,18 @@ His team has won publication awards at NAACL (2018, 2022) and ACL (2018). He has
 Dr. \textbf{Jonathan May} (Principal Scientist and Research Associate Professor at USC/ISI) will serve as PI, coordinating the activities of the team. He will serve as the POC with DARPA and will have overall responsibility for program management and technical direction; he will also lead dialogue model alignment, and will supervise the work of two graduate students. Dr. May has extensive experience in machine translation, multilinguality, and dialogue generation research, including foundational experience in cross-lingual and cross-task transfer learning models. His team has won publication awards at NAACL (2018, 2022) and ACL (2018). He has led multiple government projects such as DARPA Civil Sanctuary (PI), DARPA SHADE (co-PI), DARPA LORELEI (PI), IARPA MATERIAL (co-PI), DARPA LwLL (co-PI), and DARPA KAIROS (co-PI). 
 
 1/18/24 Marshall school panel
+
 Dr. Jonathan May is a Research Associate Professor at USC and Principal Scientist at the Information Sciences Institute (ISI), where he directs the Center for Useful Techniques Enhancing Language Applications Based on Natural And Meaningful Evidence. Dr. May's current research efforts include building empathetic chatbots to curb online toxicity, teaching agents to collaborate and compete in strategic gameplay, and developing interactive knowledge management systems. He was previously involved in multiple leadership positions in ISI’s efforts centered around translation and multilinguality. He has written and spoken about large language models extensively in the public sphere. May is an expert in architecture development for natural language processing, human-machine natural language interaction, computational journalism, machine translation, multilinguality, and transfer learning, with an extensive publication record that includes two outstanding paper awards and one best demo award. He has organized multiple NLP workshops and conferences at various service levels and currently is Treasurer of NAACL, the North American Chapter of the Association for Computational Linguistics. He is also an Amazon Scholar.
 
 
 9/2023 AAAS
+
 Jonathan May is a Research Associate Professor of Computer Science at USC. May is an expert in natural language processing, human-machine natural language interaction, computational journalism, machine translation, multilinguality, and transfer learning.
 
 
 
 7/2023 NSF APTO
+
 Dr. Jonathan May is a Research Associate Professor at USC and Research Team Leader at ISI, where he directs the Center for Useful Techniques Enhancing Language Applications Based on Natural And Meaningful Evidence. He is currently PI of ISI's efforts on DARPA Civil Sanctuary (building empathetic chatbots to curb online toxicity) and DARPA SHADE (teaching agents to collaborate and compete in strategic gameplay) as well as co-PI for ISI's efforts in DARPA’s KMASS and INCAS programs. He was previously involved in multiple leadership positions in ISI’s efforts centered around translation and multilinguality: PI of DARPA LORELEI, Co-PI of IARPA MATERIAL, and Co-PI of DARPA LwLL. He has written and spoken about large language models extensively in the public sphere. May is an expert in architecture development for natural language processing, human-machine natural language interaction, computational journalism, machine translation, multilinguality, and transfer learning, with an extensive publication record that includes two outstanding paper awards and one best demo award. He has organized multiple NLP workshops and conferences at various service levels and currently is Treasurer of NAACL.
 
 
