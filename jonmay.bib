@@ -1,22 +1,66 @@
-@misc{gu2025personalizedhelpoptimizinglowskilled,
-      title={Personalized Help for Optimizing Low-Skilled Users' Strategy}, 
-      author={Feng Gu and Wichayaporn Wongkamjan and Jonathan K. Kummerfeld and Denis Peskoff and Jonathan May and Jordan Boyd-Graber},
-      year={2025},
-      eprint={2411.09109},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2411.09109}, 
+@inproceedings{cho-etal-2025-tuning,
+    title = "Tuning-Free Personalized Alignment via Trial-Error-Explain In-Context Learning",
+    author = "Cho, Hyundong Justin  and
+      Sharma, Karishma  and
+      Jedema, Nicolaas Paul  and
+      Ribeiro, Leonardo F. R.  and
+      May, Jonathan  and
+      Moschitti, Alessandro",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-naacl.326/",
+    pages = "5864--5885",
+    ISBN = "979-8-89176-195-7",
+    abstract = "Language models are aligned to the collective voice of many, resulting in generic outputs that do not align with specific users' styles. In this work, we present Trial-Error-Explain In-Context Learning (TICL), a tuning-free method that personalizes language models for text generation tasks with fewer than 10 examples per user. TICL iteratively expands an in-context learning prompt via a trial-error-explain process, adding model-generated negative samples and explanations that provide fine-grained guidance towards a specific user`s style. TICL achieves favorable win rates on pairwise comparisons with LLM-as-a-judge up to 91.5{\%} against the previous state-of-the-art and outperforms competitive tuning-free baselines for personalized alignment tasks of writing emails, essays and news articles. Both lexical and qualitative analyses show that the negative samples and explanations enable language models to learn stylistic context more effectively and overcome the bias towards structural and formal phrases observed in their zero-shot outputs. By front-loading inference compute to create a user-specific in-context learning prompt that does not require extra generation steps at test time, presents a novel yet simple approach for personalized alignment."
 }
 
-@misc{liu2024styletransfermultiiterationpreference,
-      title={Style Transfer with Multi-iteration Preference Optimization}, 
-      author={Shuai Liu and Jonathan May},
-      year={2024},
-      eprint={2406.11581},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.11581}, 
+@inproceedings{gu-etal-2025-personalized,
+    title = "Personalized Help for Optimizing Low-Skilled Users' Strategy",
+    author = "Gu, Feng  and
+      Wongkamjan, Wichayaporn  and
+      Boyd-Graber, Jordan Lee  and
+      Kummerfeld, Jonathan K.  and
+      Peskoff, Denis  and
+      May, Jonathan",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 2: Short Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-short.6/",
+    pages = "65--74",
+    ISBN = "979-8-89176-190-2",
+    abstract = "AIs can beat humans in game environments; however, how helpful those agents are to human remains understudied. We augment Cicero, a natural language agent that demonstrates superhuman performance in Diplomacy, to generate both move and message advice based on player intentions. A dozen Diplomacy games with novice and experienced players, with varying advice settings, show that some of the generated advice is beneficial. It helps novices compete with experienced players and in some instances even surpass them. The mere presence of advice can be advantageous, even if players do not follow it."
 }
+
+
+@inproceedings{liu-may-2025-style,
+    title = "Style Transfer with Multi-iteration Preference Optimization",
+    author = "Liu, Shuai  and
+      May, Jonathan",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.135/",
+    pages = "2663--2681",
+    ISBN = "979-8-89176-189-6",
+    abstract = "Numerous recent techniques for text style transfer characterize their approaches as variants of reinforcement learning and preference optimization. In this work, we consider the relationship between these approaches and a class of optimization approaches developed primarily for (non-neural) statistical machine translation, formerly known as {\textquoteleft}tuning'. Inspired by these techniques from the past, we improve upon established preference optimization approaches, incorporating multiple iterations of exploration and optimization, and choosing contrastive examples by following a {\textquoteleft}hope' vs {\textquoteleft}fear' sampling strategy. Cognizant of the difference between machine translation and style transfer, however, we further tailor our framework with a new pseudo-parallel data generation method and a dynamic weighted reward aggregation method to tackle the lack of parallel data and the need for a multi-objective reward. We evaluate our model on two commonly used text style transfer datasets. Through automatic and human evaluation results we show the effectiveness and the superiority of our model compared to state-of-the-art baselines."
+}
+
 
 
 @InProceedings{he-etal-2025-token,
