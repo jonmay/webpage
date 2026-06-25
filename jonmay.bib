@@ -57,6 +57,29 @@
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2601.06463}, 
 }
+@inproceedings{huang-etal-2026-gta,
+    title = "{GTA}: Generating Long-horizon Tasks for Web Agents at Scale",
+    author = "Huang, Tenghao  and
+      Huang, Kung-Hsiang  and
+      Choubey, Prafulla Kumar  and
+      Zhou, Yilun  and
+      Chen, Muhao  and
+      May, Jonathan  and
+      Wu, Chien-Sheng",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.856/",
+    pages = "18805--18820",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Web agents, which couple language models with browsing and tool-use capabilities, show promise as open web assistants. Yet progress is increasingly limited by the lack of scalable, process-level supervision. Existing benchmarks are largely \textit{manually constructed}, providing only coarse start{--}goal annotations without intermediate trajectories, while recent automatic generation efforts remain expensive, biased, and shallow. These limitations prevent reliable training and evaluation of agents that must generalize to realistic, multi-hop, cross-page tasks. We introduce a scalable framework GTA that integrates crawling, retrieval-based seeding, in-context generation, and automated quality control to produce realistic tasks paired with executable trajectories. This design decouples crawling from generation for greater efficiency, grounds tasks in the site graph to enforce compositionality, and ensures dense supervision through deterministic replays and systematic validation. We instantiate the pipeline on over 50 websites covering e-commerce, government, forums, and news, with multilingual and multi-hop coverage. The resulting benchmark reveals a significant human{--}agent performance gap and enables detailed diagnostics. Our contributions are three-fold: (i) formalizing multi-hop web-agent task generation, (ii) proposing an efficient and validated pipeline for automatic data creation, and (iii) releasing a dynamic benchmark with reproducible evaluation."
+}
 
 @inproceedings{ashok-etal-2026-representation,
     title = "A Representation Sharpening Framework for Zero Shot Dense Retrieval",
@@ -82,14 +105,29 @@
 }
 
 
-@misc{ranjit2025uncoveringinterventionopportunitiessuicide,
-      title={Uncovering Intervention Opportunities for Suicide Prevention with Language Model Assistants}, 
-      author={Jaspreet Ranjit and Hyundong J. Cho and Claire J. Smerdon and Yoonsoo Nam and Myles Phung and Jonathan May and John R. Blosnich and Swabha Swayamdipta},
-      year={2025},
-      eprint={2508.18541},
-      archivePrefix={arXiv},
-      primaryClass={cs.CY},
-      url={https://arxiv.org/abs/2508.18541}, 
+@inproceedings{ranjit-etal-2026-uncovering,
+    title = "Uncovering Intervention Opportunities for Suicide Prevention with Language Model Assistants",
+    author = "Ranjit, Jaspreet  and
+      Cho, Hyundong Justin  and
+      Smerdon, Claire J.  and
+      Nam, Yoonsoo  and
+      Phung, Myles  and
+      May, Jonathan  and
+      Blosnich, John R.  and
+      Swayamdipta, Swabha",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.688/",
+    pages = "15072--15092",
+    ISBN = "979-8-89176-390-6",
+    abstract = "The National Violent Death Reporting System (NVDRS) documents suicides in the United States. In a demanding public health data pipeline, annotators manually extract structured information from death investigation records following extensive codebooks (i.e. annotation guidelines) painstakingly developed by experts. In this work, we facilitate data-driven insights from the NVDRS data to support the development of novel suicide interventions by leveraging language models (LM) as assistants to these (a) data annotators and (b) experts. We find that LM predictions match existing data annotations about 85{\%} of the time across 50 NVDRS variables. Where the LM disagrees with existing annotations, our expert review identifies that 38{\%} of these instances reveal inconsistencies between narratives and structured data. Finally, we introduce a human-in-the-loop algorithm that helps experts efficiently build and refine codebooks for new variables by having them only focus on providing feedback for incorrect LM predictions. We apply our algorithm to a real-world case study, and find that about 96K narratives contain evidence of victim interactions with legal professionals, which surfaces a substantial opportunity for upstream intervention that is not captured in the original structured data. Our findings provide evidence that LMs can serve as effective assistants to public health researchers who handle sensitive data in high-stakes scenarios."
 }
 
 @inproceedings{ashok2025language,
