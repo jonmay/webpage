@@ -65,13 +65,30 @@ inc.com, isi.edu, quora) return 403 to bots; treat those as fine. For real break
 a Wayback Machine snapshot (`https://archive.org/wayback/available?url=...`). List
 anything you couldn't fix in the PR description.
 
-### 6. CV and bios (report only)
-`cv.pdf` and `bios.txt` are maintained by hand. Don't edit them. In the PR
-description, list papers from the current and previous year that appear on the page
-but not in `cv.pdf`, and say whether the newest bio in `bios.txt` looks stale
-(title, roles, awards, number of PhD graduates).
+### 6. CV (`jonmay/cv` on GitHub, synced with Overleaf)
+The CV source is `cv.tex` in the private repo `jonmay/cv` (linked to the Overleaf
+project via Overleaf's GitHub sync). Attach it with `add_repo` (push access) and clone it.
+- Extend only the sections that already exist in `cv.tex`; never add or rename sections.
+  Copy the formatting of neighboring entries exactly. Sections to keep current:
+  Publications, Invited Talks, Service, Honors and Awards, Students Supervised and
+  Mentored, Grants and Gifts Awarded. Mirror every change made to Publications on the
+  website (new papers, arXiv-to-venue upgrades).
+- Same sourcing rule as the page: only add what you verified from a primary source
+  (venue/program page, award page, funder or USC/ISI page, the student's own page).
+  Talks, service, awards, students and grants often have no public source; if you can't
+  verify an item, put it under "Needs your check" instead of adding it.
+- Work on a branch `update/YYYY-MM-DD` in `jonmay/cv`, one commit per kind of change,
+  and open a PR against its default branch. Never push to the default branch. Jon pulls
+  the merged result into Overleaf ("Menu > Sync > GitHub > Pull GitHub changes").
+- Build the PDF: LaTeX is not preinstalled; run `apt-get update && apt-get install -y
+  texlive-latex-extra texlive-fonts-recommended latexmk`, then
+  `latexmk -pdf -interaction=nonstopmode -outdir=/tmp/cvbuild cv.tex` from the cv repo.
+  Fix any new LaTeX errors before opening the PR.
+- In the website PR, replace `cv.pdf` with the freshly built PDF (own commit), make sure
+  `jonmay.bib` matches the new Publications, and link the two PRs to each other.
+- Do not edit `bios.txt`.
 
 ## PR description
 
 Summarize changes by section, with links, then "Needs your check" for anything
-uncertain, then the CV/bios report.
+uncertain, then a short CV section linking the `jonmay/cv` PR.
